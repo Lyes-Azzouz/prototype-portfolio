@@ -1,0 +1,101 @@
+.skills {
+  position: relative;
+  margin: 100px 0 200px 0;
+  top: 100px;
+  display: flex;
+  justify-content: center;
+  color: #fff;
+
+  h1 {
+    font-size: 2.2em;
+    font-weight: 600;
+  }
+
+  h1,
+  span {
+    display: flex;
+    justify-content: center;
+  }
+  .sidebar {
+    width: 100%;
+    #subtitle {
+      color: #94a1b2;
+      padding: 50px 250px;
+      text-align: center;
+      font-weight: 200;
+      font-size: 1em;
+      font-family: "Oxygen", sans-serif;
+    }
+
+    .sidebar-content {
+      width: 100%;
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      align-items: center;
+      justify-content: space-around;
+      padding-top: 200px;
+      gap: 30px;
+      grid-auto-rows: min-content;
+      span {
+        color: #010101;
+        font-weight: 500;
+        font-size: 1.4em;
+      }
+      .techno-front {
+        background-color: #72757e;
+
+        padding: 20px;
+        border-radius: 10px;
+      }
+      .techno-back {
+        background-color: #2cb67d;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 50px;
+      }
+      .bdd {
+        background-color: #94a1b2;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 125px;
+      }
+      .dev-tools {
+        background-color: #7f5af0;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 250px;
+      }
+      .logiciels {
+        background-color: #ffffff6d;
+        padding: 20px;
+        border-radius: 10px;
+        position: relative;
+        bottom: 250px;
+      }
+      .versioning {
+        position: relative;
+        bottom: 200px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #16161a;
+        span {
+          color: #fff;
+        }
+      }
+      .communication {
+        position: relative;
+        bottom: 400px;
+        padding: 20px;
+        border-radius: 10px;
+        background-color: #010101;
+        span {
+          color: #fff;
+        }
+      }
+    }
+  }
+}

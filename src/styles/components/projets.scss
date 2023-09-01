@@ -1,0 +1,153 @@
+section {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  margin: 190px 0 100px 40px; // Marge ajustée
+}
+
+.top-texts {
+  position: relative;
+  top: 0px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-family: "Oxygen", sans-serif;
+  h2 {
+    font-size: 2em;
+    font-weight: 300;
+    position: relative;
+    bottom: 100px; // Ajustement vertical
+  }
+  p {
+    font-size: 1em;
+    font-weight: 200;
+    color: #94a1b2;
+    text-align: center;
+    position: relative;
+    bottom: 100px; // Ajustement vertical
+  }
+}
+.projets-content {
+  font-family: "Oxygen", sans-serif;
+  color: #fff;
+
+  .cards-content {
+    display: grid;
+    grid-template-columns: 1fr 0fr;
+    gap: 40px;
+    max-height: 610px;
+    overflow-y: hidden;
+    scroll-behavior: smooth;
+    .project-card {
+      position: relative;
+      height: 10px;
+      width: 240px;
+      padding: 20px;
+      color: white;
+      background: linear-gradient(#212121, #212121) padding-box,
+        linear-gradient(145deg, transparent 35%, #7f5af0, #69cdf5) border-box;
+      border: 2px solid transparent;
+      border-radius: 8px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      cursor: pointer;
+      img {
+        height: 200px;
+      }
+    }
+
+    // Utilisation de :nth-child pour simplifier les animations
+    .project-card:nth-child(1) {
+      animation: cards-animate 1s ease forwards;
+    }
+    .project-card:nth-child(2) {
+      animation: cards-animate 1s ease forwards;
+    }
+    .project-card:nth-child(3) {
+      animation: cards-animate 2s ease forwards;
+    }
+    .project-card:nth-child(4) {
+      animation: cards-animate 2s ease forwards;
+    }
+    .project-card:nth-child(5) {
+      animation: cards-animate 3s ease forwards;
+    }
+    .project-card:nth-child(6) {
+      animation: cards-animate 3s ease forwards;
+    }
+    .project-card:hover {
+      background: linear-gradient(#212121, #212121) padding-box,
+        linear-gradient(145deg, transparent 35%, #fff, #0b633e) border-box;
+
+      transition: all 1s ease;
+    }
+    .project-card::before {
+      width: 100px;
+      height: 100px;
+      content: "";
+      position: absolute;
+      background-color: #7f5af0;
+      z-index: -9;
+      filter: blur(70px);
+      transition: all 1s;
+      animation: light 3.3s ease-out forwards;
+    }
+    .project-card:hover::before {
+      filter: blur(50px);
+      background-color: #fff;
+    }
+  }
+
+  // Mise en place des chevrons (up et down) pour faire défiler les projets
+  .chevrons {
+    display: flex;
+    flex-direction: column;
+    width: 30px;
+    position: relative;
+    left: 640px;
+    bottom: 590px;
+    gap: 500px;
+    animation: light 2.2s ease-out forwards;
+
+    button {
+      border: none;
+      color: white;
+      background: none;
+      cursor: pointer;
+    }
+    button:active {
+      color: #7f5af0;
+    }
+    .up,
+    .down {
+      font-size: 30px;
+    }
+  }
+}
+
+/* Animation pour les cards  */
+@keyframes cards-animate {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+
+    height: 240px;
+    width: 240px;
+  }
+}
+
+@keyframes light {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
