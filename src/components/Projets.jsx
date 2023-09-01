@@ -13,7 +13,7 @@ const Projets = () => {
   const handleScroll = (direction) => {
     const targetElement = scrollableContentRef.current;
     if (targetElement) {
-      const scrollAmount = 380; // Ajustez la quantité de défilement ici
+      const scrollAmount = 380; // Ajustez la quantité de défilement ici (380 pour que le scroll affiche les projets 2 par 2)
       if (direction === "up") {
         targetElement.scrollTo({
           top: targetElement.scrollTop - scrollAmount,
