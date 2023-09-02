@@ -1,10 +1,32 @@
 .skills {
-  position: relative;
-  margin: 100px 0 200px 0;
-  top: 100px;
-  display: flex;
-  justify-content: center;
+  margin: 0;
   color: #fff;
+
+  .filter-bar {
+    font-family: "Oxygen", sans-serif;
+    background-color: rgba(198, 198, 200, 0.12);
+    padding: 30px;
+    display: flex;
+    border-radius: 10px;
+    justify-content: center;
+    margin: 150px 0 50px 0;
+
+    label {
+      padding: 0px 20px 0px 20px;
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: 500;
+
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+
+      input[type="checkbox"] {
+        height: 20px;
+        accent-color: #2cb67d;
+      }
+    }
+  }
 
   h1 {
     font-size: 2.2em;
@@ -16,82 +38,98 @@
     display: flex;
     justify-content: center;
   }
+
   .sidebar {
     width: 100%;
+
     #subtitle {
-      color: #94a1b2;
-      padding: 50px 250px;
+      padding: 0px 280px;
       text-align: center;
       font-weight: 200;
       font-size: 1em;
       font-family: "Oxygen", sans-serif;
     }
 
+    #check-msg {
+      position: relative;
+      top: 130px;
+      font-weight: 500;
+      color: #94a1b2;
+      background-color: rgba(198, 198, 200, 0.09);
+      padding: 10px;
+    }
+
     .sidebar-content {
-      width: 100%;
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr;
+      display: flex;
+      flex-direction: row;
+      padding: 150px 0;
+      background-color: rgba(198, 198, 200, 0.145);
+      border-radius: 10px;
+      justify-content: center;
       gap: 30px;
-      align-items: center;
-      justify-content: space-around;
-      padding-top: 200px;
-      gap: 30px;
-      grid-auto-rows: min-content;
+
       span {
         color: #010101;
         font-weight: 500;
         font-size: 1.4em;
       }
+
+      .column-1,
+      .column-2 {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+      }
+
+      .techno-front,
+      .techno-back,
+      .bdd,
+      .dev-tools,
+      .logiciels,
+      .versioning,
+      .communication {
+        box-shadow: rgba(62, 62, 186, 0.117) 0px 13px 27px -5px,
+          rgba(255, 255, 255, 0.39) 0px 8px 16px -8px;
+        width: 500px;
+        min-height: 50px;
+        padding: 20px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
       .techno-front {
         background-color: #72757e;
-
-        padding: 20px;
-        border-radius: 10px;
       }
+
       .techno-back {
         background-color: #2cb67d;
-        padding: 20px;
-        border-radius: 10px;
-        position: relative;
-        bottom: 50px;
       }
+
       .bdd {
         background-color: #94a1b2;
-        padding: 20px;
-        border-radius: 10px;
-        position: relative;
-        bottom: 125px;
       }
+
       .dev-tools {
         background-color: #7f5af0;
-        padding: 20px;
-        border-radius: 10px;
-        position: relative;
-        bottom: 250px;
       }
+
       .logiciels {
         background-color: #ffffff6d;
-        padding: 20px;
-        border-radius: 10px;
-        position: relative;
-        bottom: 250px;
       }
+
       .versioning {
-        position: relative;
-        bottom: 200px;
-        padding: 20px;
-        border-radius: 10px;
         background-color: #16161a;
+
         span {
           color: #fff;
         }
       }
+
       .communication {
-        position: relative;
-        bottom: 400px;
-        padding: 20px;
-        border-radius: 10px;
         background-color: #010101;
+
         span {
           color: #fff;
         }
