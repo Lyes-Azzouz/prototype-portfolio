@@ -14,8 +14,7 @@
     top: 70px;
     border-bottom: 1px solid #000000;
     box-shadow: rgba(0, 0, 0, 0.6) 0px 13px 27px -5px,
-      rgb(0, 0, 0) 0px 8px 16px -8px,
-      inset rgba(0, 0, 0, 0.5) 0px 13px 27px -5px;
+      rgb(0, 0, 0) 0px 8px 16px -8px;
 
     label {
       padding: 0px 20px 0px 20px;
@@ -122,6 +121,7 @@
         align-items: center;
         justify-content: center;
         background-color: #8294c4;
+        border-radius: 5px;
       }
 
       .content {
@@ -131,7 +131,7 @@
       }
 
       .content.open {
-        max-height: 1000px;
+        max-height: 2000px;
       }
     }
   }

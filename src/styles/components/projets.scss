@@ -7,25 +7,24 @@ section {
 
 .top-texts {
   position: relative;
-  top: 0px;
+  top: 80px;
 
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  text-align: right;
   color: #fff;
   font-family: "Oxygen", sans-serif;
   h2 {
     font-size: 2em;
     font-weight: 300;
     position: relative;
-    bottom: 100px; // Ajustement vertical
+    bottom: 80px; // Ajustement vertical
   }
   p {
     font-size: 1em;
     font-weight: 200;
     color: #94a1b2;
-    text-align: center;
+    line-height: 5ch;
     position: relative;
     bottom: 100px; // Ajustement vertical
   }
