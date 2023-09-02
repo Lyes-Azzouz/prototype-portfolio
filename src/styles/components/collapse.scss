@@ -1,8 +1,8 @@
 .collapse {
   border-radius: 5px;
   width: 400px;
-  background-color: #242629;
-  padding: 10px;
+  background-color: #000;
+  padding: 20px;
   min-height: 10px;
   margin: 20px 0;
   overflow: auto;
@@ -31,9 +31,9 @@
   }
 
   .collapse-content {
-    margin-top: 10px;
     color: #fffffe;
-    font-size: 0.7em;
+    font-size: 1em;
     transition: 1s ease;
+    padding: 20px 0;
   }
 }
