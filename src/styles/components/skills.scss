@@ -52,11 +52,19 @@
 
     #check-msg {
       position: relative;
-      top: 130px;
+      top: 100px;
       font-weight: 500;
       color: #94a1b2;
       background-color: rgba(198, 198, 200, 0.09);
       padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border: 2px solid #94a1b2;
+      gap: 20px;
+      .fleche {
+        font-size: 2.2em;
+      }
     }
 
     .sidebar-content {
@@ -93,7 +101,7 @@
         width: 500px;
         min-height: 50px;
         padding: 20px;
-
+        transition: 2s ease;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -133,6 +141,16 @@
         span {
           color: #fff;
         }
+      }
+
+      .content {
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.8s ease-in-out;
+      }
+
+      .content.open {
+        max-height: 1000px;
       }
     }
   }
