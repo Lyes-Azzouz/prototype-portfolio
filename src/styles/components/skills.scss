@@ -4,12 +4,18 @@
 
   .filter-bar {
     font-family: "Oxygen", sans-serif;
-    background-color: rgba(198, 198, 200, 0.12);
+    width: 100%;
     padding: 30px;
     display: flex;
     border-radius: 10px;
     justify-content: center;
-    margin: 150px 0 50px 0;
+    z-index: 2;
+    position: relative;
+    top: 70px;
+    border-bottom: 1px solid #000000;
+    box-shadow: rgba(0, 0, 0, 0.6) 0px 13px 27px -5px,
+      rgb(0, 0, 0) 0px 8px 16px -8px,
+      inset rgba(0, 0, 0, 0.5) 0px 13px 27px -5px;
 
     label {
       padding: 0px 20px 0px 20px;
@@ -29,7 +35,7 @@
   }
 
   h1 {
-    font-size: 2.2em;
+    font-size: 3.2em;
     font-weight: 600;
   }
 
@@ -41,40 +47,49 @@
 
   .sidebar {
     width: 100%;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     #subtitle {
-      padding: 0px 280px;
+      padding: 0px 280px 100px 280px;
       text-align: center;
       font-weight: 200;
-      font-size: 1em;
+      font-size: 3em;
       font-family: "Oxygen", sans-serif;
+      border-bottom: 2px solid #72757e;
     }
 
     #check-msg {
       position: relative;
-      top: 100px;
+      top: 30px;
+      width: 900px;
       font-weight: 500;
       color: #94a1b2;
-      background-color: rgba(198, 198, 200, 0.09);
+
       padding: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-      border: 2px solid #94a1b2;
+
       gap: 20px;
+      text-align: center;
       .fleche {
-        font-size: 2.2em;
+        font-size: 1.5 em;
       }
     }
 
     .sidebar-content {
       display: flex;
       flex-direction: row;
-      padding: 150px 0;
+      padding: 160px 0 50px 0;
       background-color: rgba(198, 198, 200, 0.145);
       border-radius: 10px;
       justify-content: center;
       gap: 30px;
+      width: 100%;
+      position: relative;
+      bottom: 50px;
 
       span {
         color: #010101;
@@ -105,6 +120,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+        justify-content: center;
       }
 
       .techno-front {

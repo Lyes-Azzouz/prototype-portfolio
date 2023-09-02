@@ -33,7 +33,8 @@ const Projets = () => {
       <div className="top-texts">
         <h2>Mes projets</h2>
         <p>
-          Dans cette section, sont postés tous les projets que j'ai réalisé.
+          Voici la liste de tout les projets que j'ai réalisé ou auquels j'ai
+          participé.
           <br />
           Faites défiler le carousel à l'aide des chevrons.
         </p>
