@@ -29,7 +29,7 @@ const Projets = () => {
   };
 
   return (
-    <section className="projets" id="projets">
+    <section className="projets">
       <div className="top-texts">
         <h2>Mes projets</h2>
         <p>

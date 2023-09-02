@@ -24,7 +24,7 @@ const Skills = () => {
   };
 
   return (
-    <section className="skills">
+    <section className="skills" id="skills">
       <div className="sidebar">
         <h1>Mes compétences</h1>
         <p id="subtitle">

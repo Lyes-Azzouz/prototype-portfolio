@@ -1,5 +1,5 @@
 .skills {
-  margin: 0;
+  margin: 0 auto;
   color: #fff;
 
   .filter-bar {
@@ -88,12 +88,12 @@
       .logiciels,
       .versioning,
       .communication {
-        box-shadow: rgba(62, 62, 186, 0.117) 0px 13px 27px -5px,
-          rgba(255, 255, 255, 0.39) 0px 8px 16px -8px;
+        box-shadow: rgba(0, 0, 0, 0.117) 0px 13px 27px -5px,
+          rgb(0, 0, 0) 0px 8px 16px -8px;
         width: 500px;
         min-height: 50px;
         padding: 20px;
-        border-radius: 10px;
+
         display: flex;
         flex-direction: column;
         align-items: center;

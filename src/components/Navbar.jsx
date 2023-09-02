@@ -35,7 +35,7 @@ class Navbar extends React.Component {
             </li>
             <li
               className="liste"
-              onClick={() => this.scrollToSection("projets")}
+              onClick={() => this.scrollToSection("skills")}
             >
               Compétences
             </li>
