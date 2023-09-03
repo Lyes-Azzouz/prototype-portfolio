@@ -6,6 +6,14 @@
   top: 150px;
   height: auto;
 
+  #accueil {
+    height: 50px;
+    background-color: #fff;
+    width: 100px;
+    position: relative;
+    bottom: 320px;
+  }
+
   .texts-content {
     margin-right: 20px;
     .titles {
@@ -18,7 +26,6 @@
       font-weight: 500;
       color: #2cb67d;
 
-      /* Animation pour chaque lettre */
       #yes {
         animation: letter-spawn 6s ease forwards;
       }

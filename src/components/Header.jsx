@@ -22,7 +22,8 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header" id="accueil">
+    <header className="header">
+      <div id="accueil"></div>
       <div className="container">
         <div className="texts-content">
           <div className="titles">
@@ -83,7 +84,6 @@ const Header = () => {
       </div>{" "}
       <div className="rectangle"></div>
       <Projets />
-      <div className="rectangle-bg"></div>
     </header>
   );
 };

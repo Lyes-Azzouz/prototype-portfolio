@@ -1,11 +1,10 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/components/skills.scss";
 import Collapse from "./Collapse";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowAltCircleDown } from "@fortawesome/free-solid-svg-icons";
 
 const Skills = () => {
-  // État pour stocker les compétence sélectionnées par l'utilisateur
   const [selectedSkills, setSelectedSkills] = useState({
     "Front-end": false,
     "Back-end": false,
@@ -16,6 +15,8 @@ const Skills = () => {
     "Gestion de projets & Communication": false,
   });
 
+  const [isScrolling, setIsScrolling] = useState(false); // gere l'état du défilement
+
   // Fonction qui gère les modifications de la sélection de compétences
   const handleSkillToggle = (skill) => {
     setSelectedSkills((prevState) => ({
@@ -24,23 +25,51 @@ const Skills = () => {
     }));
   };
 
+  // Fonction qui gère l'affichage au scroll
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollY = window.scrollY;
+      const triggerValue = 1316;
+
+      console.log("ScrollY:", scrollY);
+
+      if (scrollY > triggerValue) {
+        setIsScrolling(true);
+      } else {
+        setIsScrolling(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+  const containerClassName = `scroll-container ${
+    isScrolling ? "scrolling" : ""
+  }`;
   return (
-    <section className="skills" id="skills">
+    <section className="skills">
+      <div id="skills"></div>
       <div className="sidebar">
-        <h1>Mes compétences</h1>
-        <p id="subtitle">
-          Dans cette section, vous trouverez toutes les compétences acquises par
-          la pratique des différents langages et des différentes technologies
-          utilisées dans le cadre du développement web. <br />
-        </p>
+        <div className={containerClassName}>
+          <h1>Mes compétences</h1>
+          <p id="subtitle">
+            Dans cette section, vous trouverez toutes les compétences acquises
+            par la pratique des différents langages et des différentes
+            technologies utilisées dans le cadre du développement web. <br />
+          </p>{" "}
+          <div className="fleche">
+            <FontAwesomeIcon icon={faArrowAltCircleDown} />
+          </div>
+        </div>
         <span id="check-msg">
           Afin de faciliter la visibilité des compétences, cochez les cases à
           cocher des menus qui vous intéressent, puis dépliez le contenu de
           chaque compétence en appuyant sur le bouton "+".
-          <div className="fleche">
-            <FontAwesomeIcon icon={faArrowAltCircleDown} />
-          </div>
         </span>
+
         <div className="filter-bar">
           {Object.keys(selectedSkills).map((skill) => (
             <label key={skill}>
