@@ -1,37 +1,31 @@
-import React from "react";
-
+import React, { useEffect } from "react";
 import "../styles/components/contact.scss";
 
-const Contact = () => {
+function Contact() {
+  useEffect(() => {
+    window.onload = () => {
+      const iframe = document.getElementById("iframe");
+
+      if (iframe) {
+        iframe.src = "https://tally.so/r/nWEgMj";
+      }
+    };
+  }, []);
+
   return (
-    <section className="contact">
-      <h3 id="contact">Me contacter</h3>
-      <p>
-        Mon profil vous intéresse ? N'hésitez pas à me contacter en complétant
-        le formulaire çi-dessous.
-      </p>
-      <div className="form-container">
-        <form action="submit">
-          <label htmlFor="email">E-mail :</label>
-          <input type="text" name="email" placeholder="exemple@email.com" />
-          <label htmlFor="name">Nom :</label>
-          <input
-            type="text"
-            name="email"
-            placeholder="Nom complet / Nom de l'entreprise"
-          />
-          <label htmlFor="texte">Message :</label>
-          <input
-            id="placeholder"
-            type="text"
-            name="texte"
-            placeholder="Sujet du message "
-          />
-          <button type="submit">Envoyer</button>
-        </form>
-      </div>
-    </section>
+    <div className="contact" id="contact">
+      <iframe
+        id="iframe"
+        width="100%"
+        height="1000px"
+        frameBorder="0"
+        marginHeight="0"
+        marginWidth="0"
+        title="Me contacter"
+      ></iframe>
+      <div id="bloc-hide"></div>
+    </div>
   );
-};
+}
 
 export default Contact;

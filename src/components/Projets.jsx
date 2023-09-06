@@ -1,19 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/components/projets.scss";
 import projectsData from "../projets.json";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 import { useRef } from "react";
+import Modal from "./Modal";
 
 const Projets = () => {
   const projets = projectsData;
   const scrollableContentRef = useRef(null);
+  const [selectedProject, setSelectedProject] = useState(null);
 
   const handleScroll = (direction) => {
     const targetElement = scrollableContentRef.current;
     if (targetElement) {
-      const scrollAmount = 380; // Ajustez la quantité de défilement ici (380 pour que le scroll affiche les projets 2 par 2)
+      const scrollAmount = 380;
       if (direction === "up") {
         targetElement.scrollTo({
           top: targetElement.scrollTop - scrollAmount,
@@ -28,21 +30,40 @@ const Projets = () => {
     }
   };
 
+  const handleProjetClick = (projectIndex) => {
+    const project = projets[projectIndex];
+    setSelectedProject(project); // Met a jour l'etat pour afficher la modal
+    setTimeout(() => {
+      setSelectedProject((prev) => ({
+        ...prev,
+        entering: true, // Ajoute la propriete "entering" pour ajouter la nouvelle classe
+      }));
+    }, 0);
+  };
+
+  const handleCloseModal = () => {
+    setSelectedProject(null);
+  };
+
   return (
     <section className="projets">
       <div className="top-texts">
         <h2>Mes projets</h2>
         <p>
-          Voici la liste de tout les projets que j'ai réalisé ou auquels j'ai
+          Voici la liste de tous les projets que j'ai réalisés ou auxquels j'ai
           participé.
           <br />
-          Faites défiler le carousel à l'aide des chevrons.
+          Faites défiler le carrousel à l'aide des chevrons.
         </p>
       </div>
       <div className="projets-content">
         <div className="cards-content" ref={scrollableContentRef}>
           {projets.map((projet, index) => (
-            <div className="project-card " key={index}>
+            <div
+              className="project-card"
+              key={index}
+              onClick={() => handleProjetClick(index)}
+            >
               <h3>{projet.title}</h3>
               <p>{projet.description}</p>
             </div>
@@ -63,6 +84,10 @@ const Projets = () => {
           </button>
         </div>
       </div>
+
+      {selectedProject && (
+        <Modal project={selectedProject} onClose={handleCloseModal} />
+      )}
     </section>
   );
 };
