@@ -42,18 +42,32 @@
       flex-direction: column;
       align-items: center;
       gap: 2px;
-      padding-left: 65px;
+      position: absolute;
+      right: 100%;
+      left: 100px;
       cursor: pointer;
       font-family: "Oxygen", sans-serif;
-      animation: liste-animate 5s ease-in-out forwards;
-
+      animation: line-animate 5s ease-in-out forwards;
+      font-weight: 600;
       .name {
-        font-weight: 600;
+        font-size: 1.6em;
+        .l {
+          position: relative;
+          bottom: 10px;
+          left: 4px;
+        }
+        .a {
+          color: #2cb67d;
+        }
       }
       .poste {
-        font-weight: 300;
         font-size: 0.5em;
-        color: #2cb67d;
+        position: relative;
+        left: 3px;
+        bottom: 10px;
+        .w {
+          color: #2cb67d;
+        }
       }
     }
   }

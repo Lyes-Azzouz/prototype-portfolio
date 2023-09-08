@@ -22,8 +22,16 @@ class Navbar extends React.Component {
       <nav className="navbar-container" onMouseOver={this.mouseOver}>
         <div className="elements">
           <div className="me">
-            <span className="name">Lyes Azzouz</span>
-            <span className="poste">Web developer</span>
+            <div className="name">
+              {" "}
+              <span className="l">L</span>
+              <span className="a">A</span>
+            </div>
+
+            <div className="poste">
+              <span className="w">W</span>
+              <span className="d">D</span>
+            </div>
           </div>
           <div className="square"></div>
           <ul>

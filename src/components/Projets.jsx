@@ -64,8 +64,15 @@ const Projets = () => {
               key={index}
               onClick={() => handleProjetClick(index)}
             >
-              <h3>{projet.title}</h3>
-              <p>{projet.description}</p>
+              <div className="card-content">
+                <h3>{projet.title}</h3>
+                <img
+                  src={projet.image}
+                  alt="logo_projet"
+                  id="logo_projet_card"
+                />
+                <p>{projet.description}</p>
+              </div>
             </div>
           ))}
         </div>

@@ -1,11 +1,24 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400&display=swap");
+
 html,
 body {
-  margin: 0 auto;
+  margin: 0;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
-  width: 1440px;
   overflow-x: hidden;
+}
+
+/* Styles pour les écrans de taille normale (largeur minimale de 1440px) */
+@media screen and (min-width: 1440px) {
+  body {
+    width: 1440px; /* Fixez une largeur minimale pour le corps de la page */
+    margin: 0 auto; /* Centrez horizontalement */
+  }
+}
+
+/* Styles pour les écrans de taille tablette (par exemple, largeur maximale de 768px) */
+@media screen and (max-width: 768px) {
+  /* Ajoutez ici les styles spécifiques à la mise en page de la tablette */
 }
