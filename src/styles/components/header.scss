@@ -15,6 +15,17 @@
     bottom: 320px;
   }
 
+  .top-texts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    line-height: 0;
+    p {
+      padding-top: 10px;
+    }
+  }
+
   .texts-content {
     position: relative;
     right: 145px;

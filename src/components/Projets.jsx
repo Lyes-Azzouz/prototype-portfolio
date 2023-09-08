@@ -50,8 +50,7 @@ const Projets = () => {
       <div className="top-texts">
         <h2>Mes projets</h2>
         <p>
-          Voici la liste de tous les projets que j'ai réalisés ou auxquels j'ai
-          participé.
+          Vous trouverez tout mes projets ci-dessous.
           <br />
           Faites défiler le carrousel à l'aide des chevrons.
         </p>
