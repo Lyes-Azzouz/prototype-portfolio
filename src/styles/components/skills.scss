@@ -9,7 +9,6 @@
 
   .filter-bar {
     font-family: "Oxygen", sans-serif;
-
     width: 100%;
     padding: 30px;
     display: flex;
@@ -27,7 +26,6 @@
       text-align: center;
       font-size: 1.1em;
       font-weight: 500;
-
       display: flex;
       flex-direction: column;
       gap: 10px;
@@ -38,16 +36,17 @@
       }
     }
   }
+
   .scroll-container {
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-bottom: 150px;
 
     h1 {
       font-size: 5em;
       position: relative;
       left: 1500px;
-
       font-weight: 600;
     }
 
@@ -61,20 +60,22 @@
       display: flex;
       justify-content: center;
     }
+
     .fleche {
       font-size: 2em;
     }
+
     &.scrolling {
       h1 {
         opacity: 0;
         animation: title-animate 0.5s ease forwards;
       }
+
       p {
         opacity: 0;
         animation: p-animate 1.5s ease forwards;
       }
     }
-    margin-bottom: 150px;
   }
 
   .sidebar {
@@ -83,6 +84,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     #subtitle {
       padding: 0px 280px 100px 280px;
       text-align: center;
@@ -98,12 +100,10 @@
       width: 900px;
       font-weight: 500;
       color: #94a1b2;
-
       padding: 10px;
       display: flex;
       flex-direction: column;
       align-items: center;
-
       gap: 20px;
       text-align: center;
     }
@@ -173,9 +173,11 @@
     opacity: 0;
     left: 1500px;
   }
+
   50% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
     left: 0px;
@@ -187,9 +189,11 @@
     opacity: 0;
     right: 1500px;
   }
+
   50% {
     opacity: 0.5;
   }
+
   100% {
     opacity: 1;
     right: 0px;

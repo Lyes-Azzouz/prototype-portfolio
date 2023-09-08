@@ -49,11 +49,7 @@ const Projets = () => {
     <section className="projets">
       <div className="top-texts">
         <h2>Mes projets</h2>
-        <p>
-          Vous trouverez tout mes projets ci-dessous.
-          <br />
-          Faites défiler le carrousel à l'aide des chevrons.
-        </p>
+        <p>Faites défiler le carrousel à l'aide des chevrons.</p>
       </div>
       <div className="projets-content">
         <div className="cards-content" ref={scrollableContentRef}>

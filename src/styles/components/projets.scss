@@ -2,33 +2,37 @@ section {
   display: flex;
   flex-direction: column;
   height: auto;
-  margin: 190px 0 100px 40px; // Marge ajustée
+  margin: 230px 0 100px 40px;
 }
 
 .top-texts {
   position: relative;
   top: 80px;
-
+  animation: text-cards-animate 3s ease forwards;
   display: flex;
   flex-direction: column;
-  text-align: right;
+  text-align: center;
   color: #fff;
   font-family: "Oxygen", sans-serif;
+
   h2 {
-    font-size: 2em;
+    font-size: 3em;
+    opacity: 0.7;
     font-weight: 300;
     position: relative;
-    bottom: 80px; // Ajustement vertical
+    bottom: 80px;
   }
+
   p {
-    font-size: 1em;
-    font-weight: 200;
+    font-size: 0.9em;
+    font-weight: 400;
     color: #94a1b2;
-    line-height: 5ch;
+    line-height: 3ch;
     position: relative;
-    bottom: 100px; // Ajustement vertical
+    bottom: 100px;
   }
 }
+
 .projets-content {
   font-family: "Oxygen", sans-serif;
   color: #fff;
@@ -40,6 +44,7 @@ section {
     max-height: 610px;
     overflow-y: hidden;
     scroll-behavior: smooth;
+
     .project-card {
       position: relative;
       height: 10px;
@@ -55,8 +60,8 @@ section {
       align-items: center;
       text-align: center;
       cursor: pointer;
+
       .card-content {
-        animation: text-cards-animate 2.5s ease forwards;
         margin: 0;
         padding: 0;
         position: absolute;
@@ -67,54 +72,76 @@ section {
         align-items: center;
 
         h3 {
-          font-size: 1.1em;
+          font-size: 0.88em;
           font-weight: 400;
-          padding: 0 10px;
-          opacity: 0.8;
+          padding: 10px;
+          margin: 0 10px;
+          opacity: 0.7;
+          animation: text-cards-animate 2s ease forwards;
+          transition: all 1s;
+          width: 150px;
         }
+
         img {
-          height: 1.7em;
+          height: 1.5em;
           padding: 10px;
           border-radius: 5px;
-          background-color: rgba(76, 76, 65, 0.3);
-          box-shadow: rgba(255, 255, 255, 0.1) 0px 3px 27px -5px,
-            rgb(255, 255, 255, 0.1) 0px 8px 16px -8px;
+          transition: all 1s;
+          box-shadow: rgb(127, 90, 240, 0.7) 0px 3px 27px -5px,
+            rgb(0, 0, 0) 0px 8px 16px -8px;
+          animation: text-cards-animate 3s ease forwards;
         }
+
         p {
-          font-size: 0.9em;
+          font-size: 0.68em;
           padding: 10px;
+          margin: 10px;
           color: #94a1b2;
-          background-color: rgba(0, 0, 0, 0.1);
+          transition: all 1s;
           border-radius: 5px;
+          animation: text-cards-animate 4s ease forwards;
+          width: 160px;
         }
       }
     }
 
-    // Utilisation de :nth-child pour simplifier les animations
-    .project-card:nth-child(1) {
-      animation: cards-animate 1s ease forwards;
-    }
+    .project-card:nth-child(1),
     .project-card:nth-child(2) {
       animation: cards-animate 1s ease forwards;
     }
-    .project-card:nth-child(3) {
-      animation: cards-animate 2s ease forwards;
-    }
+
+    .project-card:nth-child(3),
     .project-card:nth-child(4) {
       animation: cards-animate 2s ease forwards;
     }
-    .project-card:nth-child(5) {
-      animation: cards-animate 3s ease forwards;
-    }
+
+    .project-card:nth-child(5),
     .project-card:nth-child(6) {
       animation: cards-animate 3s ease forwards;
     }
+
     .project-card:hover {
       background: linear-gradient(#212121, #212121) padding-box,
         linear-gradient(145deg, transparent 35%, #fff, #0b633e) border-box;
-
       transition: all 1s ease;
+      .card-content {
+        img {
+          border-radius: 5px;
+          transform: scale(1.1);
+          box-shadow: #000000 0px 20px 27px -5px, #000000 0px 8px 16px -8px;
+          transition: all 0.7s ease;
+        }
+
+        h3,
+        p {
+          transition: all 0.8s ease;
+          background-color: rgba(0, 0, 0, 0.256);
+          border-radius: 5px;
+          box-shadow: #000000 0px 20px 27px -5px, #000000 0px 8px 16px -8px;
+        }
+      }
     }
+
     .project-card::before {
       width: 100px;
       height: 100px;
@@ -126,13 +153,13 @@ section {
       transition: all 1s;
       animation: light 3.3s ease-out forwards;
     }
+
     .project-card:hover::before {
       filter: blur(50px);
       background-color: #fff;
     }
   }
 
-  // Mise en place des chevrons (up et down) pour faire défiler les projets
   .chevrons {
     display: flex;
     flex-direction: column;
@@ -149,9 +176,11 @@ section {
       background: none;
       cursor: pointer;
     }
+
     button:active {
       color: #7f5af0;
     }
+
     .up,
     .down {
       font-size: 30px;
@@ -159,14 +188,13 @@ section {
   }
 }
 
-/* Animation pour les cards  */
 @keyframes cards-animate {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
-
     height: 240px;
     width: 240px;
   }
@@ -176,6 +204,7 @@ section {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
@@ -183,16 +212,17 @@ section {
 
 @keyframes text-cards-animate {
   0% {
+    opacity: 0;
     visibility: hidden;
   }
-  20% {
-    visibility: visible;
-    opacity: 0;
-  }
+
   50% {
-    opacity: 0.5;
+    opacity: 0;
+    visibility: hidden;
   }
+
   100% {
     opacity: 1;
+    visibility: visible;
   }
 }

@@ -34,12 +34,12 @@
 
 @keyframes unfold {
   0% {
-    transform: translate(-50%, -50%) scale(0); /* Utilisez "scale" pour effectuer l'animation de la taille */
+    transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
 
   100% {
-    transform: translate(0, 0) scale(1); /* Retour à la taille normale */
+    transform: translate(0, 0) scale(1);
     opacity: 1;
   }
 }

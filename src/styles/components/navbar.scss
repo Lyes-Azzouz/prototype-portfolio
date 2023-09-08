@@ -11,30 +11,20 @@
   z-index: 5;
   left: 0;
 
-  // Carré qui se transforme en ligne de chargement dans la navbar
   .square {
     position: absolute;
     left: 0;
     top: 100px;
-
-    background: linear-gradient(
-      to right,
-      white 0%,
-      #2cb67d 0%,
-      #2cb67d 100%
-    ); /* Gradient initial */
+    background: linear-gradient(to right, white 0%, #2cb67d 0%, #2cb67d 100%);
     background-size: 100% 100%;
-
     animation: square-animation 3.7s ease-in-out forwards;
   }
 
-  // Eléments de la barre de navigation
   .elements {
     width: 100%;
     justify-content: center;
     display: flex;
     align-items: center;
-
     font-size: 1.8em;
 
     .me {
@@ -49,28 +39,34 @@
       font-family: "Oxygen", sans-serif;
       animation: line-animate 5s ease-in-out forwards;
       font-weight: 600;
+
       .name {
         font-size: 1.6em;
+
         .l {
           position: relative;
           bottom: 10px;
           left: 4px;
         }
+
         .a {
           color: #2cb67d;
         }
       }
+
       .poste {
         font-size: 0.5em;
         position: relative;
         left: 3px;
         bottom: 10px;
+
         .w {
           color: #2cb67d;
         }
       }
     }
   }
+
   ul {
     display: flex;
     justify-content: space-around;
@@ -82,9 +78,11 @@
     position: relative;
     left: 0;
     animation: liste-animate 6s ease forwards;
+
     a {
       color: #fff;
     }
+
     .liste {
       display: inline-block;
       position: relative;
@@ -92,6 +90,7 @@
       font-family: "Oxygen", sans-serif;
       animation: item-opacity 2.3s ease forwards;
     }
+
     .liste:after {
       content: "";
       position: absolute;
@@ -105,13 +104,13 @@
       transform-origin: bottom right;
       transition: transform 0.2s ease-out;
     }
+
     .liste:hover::after {
       transform: scaleX(1);
       transform-origin: bottom left;
     }
   }
 
-  // Ligne qui apparait apres le passage du carré
   .line {
     width: 100%;
     height: 1px;
@@ -123,7 +122,6 @@
   }
 }
 
-// Animation du carré qui se transforme en ligne de chargement
 @keyframes square-animation {
   0% {
     width: 2px;
@@ -132,6 +130,7 @@
     left: 0;
     background-size: 80% 20%;
   }
+
   50% {
     width: 100%;
     height: 2px;
@@ -139,6 +138,7 @@
     left: 0;
     background-size: 100% 100%;
   }
+
   80% {
     width: 100%;
     height: 2px;
@@ -146,6 +146,7 @@
     left: calc(100% - 10px);
     background-size: 100% 100%;
   }
+
   90% {
     width: 2px;
     height: 0px;
@@ -154,6 +155,7 @@
     background-size: 100% 100%;
     background-color: #fff;
   }
+
   100% {
     width: 0px;
     height: 0px;
@@ -164,11 +166,11 @@
   }
 }
 
-// Animation de la ligne décorative
 @keyframes line-animate {
   0% {
     opacity: 0;
   }
+
   20% {
     opacity: 0;
   }
@@ -186,40 +188,44 @@
   }
 }
 
-// Animation des éléments de la liste
 @keyframes liste-animate {
   0% {
     opacity: 0;
     left: 0;
   }
+
   100% {
     opacity: 1;
     transition: 1s ease;
   }
 }
 
-// Animation d'opacité des éléments de la liste
 @keyframes item-opacity {
   0% {
     opacity: 0;
     color: #2cb67d;
   }
+
   20% {
     opacity: 0.2;
     color: #2cb67d;
   }
+
   40% {
     opacity: 0.4;
     color: #2cb67d;
   }
+
   60% {
     opacity: 0.6;
     color: #2cb67d;
   }
+
   80% {
     opacity: 0.8;
     color: #2cb67d;
   }
+
   100% {
     opacity: 1;
     color: #ffffff;
