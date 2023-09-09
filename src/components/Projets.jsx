@@ -63,7 +63,7 @@ const Projets = () => {
                 <h3>{projet.title}</h3>
                 <img
                   src={projet.image}
-                  alt="logo_projet"
+                  alt={`image_projet_${index + 1}`}
                   id="logo_projet_card"
                 />
                 <p>{projet.description}</p>

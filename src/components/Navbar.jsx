@@ -2,14 +2,6 @@ import React from "react";
 import "../styles/components/navbar.scss";
 
 class Navbar extends React.Component {
-  mouseOver = () => {
-    console.log("ova");
-  };
-
-  mouseOut = () => {
-    console.log("out");
-  };
-
   scrollToSection = (sectionId) => {
     const section = document.getElementById(sectionId);
     if (section) {

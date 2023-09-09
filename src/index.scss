@@ -3,22 +3,10 @@
 
 html,
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
   box-sizing: border-box;
   font-family: "Inter", sans-serif;
   overflow-x: hidden;
-}
-
-/* Styles pour les écrans de taille normale (largeur minimale de 1440px) */
-@media screen and (min-width: 1440px) {
-  body {
-    width: 1440px; /* Fixez une largeur minimale pour le corps de la page */
-    margin: 0 auto; /* Centrez horizontalement */
-  }
-}
-
-/* Styles pour les écrans de taille tablette (par exemple, largeur maximale de 768px) */
-@media screen and (max-width: 768px) {
-  /* Ajoutez ici les styles spécifiques à la mise en page de la tablette */
+  max-width: 1440px;
 }

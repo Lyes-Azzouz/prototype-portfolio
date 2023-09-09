@@ -1,35 +1,30 @@
 section {
   display: flex;
   flex-direction: column;
-  height: auto;
-  margin: 230px 0 100px 40px;
+  margin: 225px 0 0px 40px;
 }
 
 .top-texts {
   position: relative;
-  top: 80px;
+  bottom: 20px;
+  left: 70px;
   animation: text-cards-animate 3s ease forwards;
   display: flex;
   flex-direction: column;
   text-align: center;
   color: #fff;
-  font-family: "Oxygen", sans-serif;
+  width: 500px;
 
   h2 {
-    font-size: 3em;
-    opacity: 0.7;
+    font-size: 1.4em;
     font-weight: 300;
-    position: relative;
-    bottom: 80px;
   }
 
   p {
-    font-size: 0.9em;
+    font-size: 1em;
     font-weight: 400;
     color: #94a1b2;
     line-height: 3ch;
-    position: relative;
-    bottom: 100px;
   }
 }
 
@@ -44,14 +39,19 @@ section {
     max-height: 610px;
     overflow-y: hidden;
     scroll-behavior: smooth;
+    border-top: 5px solid rgb(22, 22, 26);
+    border-bottom: 5px solid rgb(22, 22, 26);
+    padding: 35px 20px;
+    border-radius: 25px;
+    background-color: rgb(22, 22, 26, 0.3);
 
     .project-card {
       position: relative;
       height: 10px;
       width: 240px;
       padding: 20px;
-      background: linear-gradient(#212121, #212121) padding-box,
-        linear-gradient(145deg, transparent 35%, #7f5af0, #69cdf5) border-box;
+      background: linear-gradient(#16161a, #16161a) padding-box,
+        linear-gradient(145deg, transparent 35%, #7f5af0, #7f5af0) border-box;
       border: 2px solid transparent;
       border-radius: 8px;
       display: flex;
@@ -93,7 +93,7 @@ section {
         }
 
         p {
-          font-size: 0.68em;
+          font-size: 0.7em;
           padding: 10px;
           margin: 10px;
           color: #94a1b2;
@@ -137,7 +137,6 @@ section {
           transition: all 0.8s ease;
           background-color: rgba(0, 0, 0, 0.256);
           border-radius: 5px;
-          box-shadow: #000000 0px 20px 27px -5px, #000000 0px 8px 16px -8px;
         }
       }
     }
@@ -163,12 +162,17 @@ section {
   .chevrons {
     display: flex;
     flex-direction: column;
-    width: 30px;
+    width: 50px;
     position: relative;
-    left: 630px;
-    bottom: 590px;
-    gap: 500px;
+    left: 670px;
+    bottom: 450px;
+    gap: 100px;
     animation: light 2.2s ease-out forwards;
+    border-top: 5px solid #7f5af0;
+    border-bottom: 5px solid #7f5af0;
+    border-radius: 25px;
+    background-color: rgb(22, 22, 26, 0.6);
+    padding: 10px 0;
 
     button {
       border: none;

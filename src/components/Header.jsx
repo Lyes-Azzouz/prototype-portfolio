@@ -1,26 +1,8 @@
 import React from "react";
 import "../styles/components/header.scss";
-import { useState, useEffect } from "react";
-import programmingOneImage from "../assets/images/programing_one.jpg";
-import programmingTwoImage from "../assets/images/desktop.jpg";
-import programmingThreeImage from "../assets/images/setup.jpg";
 import Projets from "./Projets";
 
 const Header = () => {
-  const images = [
-    programmingOneImage,
-    programmingTwoImage,
-    programmingThreeImage,
-  ];
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 5000);
-    return () => clearInterval(interval);
-  }, []);
-
   return (
     <header className="header">
       <div id="accueil"></div>
@@ -68,18 +50,8 @@ const Header = () => {
             développeur web, et je suis impatient de contribuer à des projets
             innovants. J'apporte un dévouement inébranlable à chaque tâche que
             j'entreprends, et ma volonté de toujours apprendre et m'améliorer me
-            pousse à rester à la pointe des dernières technologies. Mon approche
-            consiste à créer des solutions web qui non seulement répondent aux
-            besoins, mais qui laissent également une impression durable.
-            J'accorde une grande importance à l'esthétique, à la convivialité et
-            à l'expérience utilisateur. Si vous cherchez un développeur web
-            engagé et passionné pour votre prochain projet, je serais ravi de
-            discuter avec vous. Jetez un coup d'œil à mon portfolio pour
-            découvrir mes réalisations et n'hésitez pas à me contacter pour en
-            savoir plus sur la manière dont je peux contribuer à votre succès en
-            ligne.
           </p>
-          <button className="cv">Télécharger mon CV</button>
+          <button className="cv">Curriculum vitae</button>
         </div>
       </div>{" "}
       <div className="rectangle"></div>

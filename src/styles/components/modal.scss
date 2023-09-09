@@ -26,6 +26,23 @@
   align-items: center;
   justify-content: space-between;
   gap: 50px;
+  h2 {
+    color: #2cb67d;
+    font-size: 2em;
+  }
+  p {
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.27em;
+  }
+  img {
+    height: 80px;
+    background: linear-gradient(#212121, #212121) padding-box,
+      linear-gradient(145deg, transparent 35%, #000000, #0b633e) border-box;
+    box-shadow: #000000 0px 20px 37px -5px, #000000 0px 8px 16px -8px;
+    padding: 10px 20px;
+  }
 }
 
 .modal-entering {
