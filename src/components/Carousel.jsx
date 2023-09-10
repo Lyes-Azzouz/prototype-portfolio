@@ -9,7 +9,7 @@ function Carousel({ images }) {
     setImageOpacity(0);
     setTimeout(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-      setImageOpacity(0.7);
+      setImageOpacity(0.3);
     }, 500);
   };
 
@@ -19,12 +19,12 @@ function Carousel({ images }) {
       setCurrentImageIndex(
         (prevIndex) => (prevIndex - 1 + images.length) % images.length
       );
-      setImageOpacity(0.7);
+      setImageOpacity(0.3);
     }, 500);
   };
 
   useEffect(() => {
-    setImageOpacity(0.7);
+    setImageOpacity(0.68);
   }, [currentImageIndex]);
 
   return (

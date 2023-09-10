@@ -19,28 +19,27 @@ function Modal(props) {
     <div className="modal">
       <div className={modalClasses.join(" ")}>
         <h2>{project.title}</h2>
-
-        <Carousel images={project.imageModal} />
         <div className="modal-elements">
-          <p>{project.modalText}</p>
-          <div className="logos">
-            {project.langagelogo.map((logo, index) => (
-              <img key={index} src={logo} alt={`Logo ${index + 1}`} />
-            ))}
-          </div>
-
-          <a
-            href={project.lienprojet}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Lien vers le repository GitHub
-          </a>
+          <Carousel images={project.imageModal} />
+          <div className="elements">
+            <div className="logos">
+              {project.langagelogo.map((logo, index) => (
+                <img key={index} src={logo} alt={`Logo ${index + 1}`} />
+              ))}
+            </div>{" "}
+            <p>{project.modalText}</p>{" "}
+            <a
+              href={project.lienprojet}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Lien vers le repository GitHub
+            </a>{" "}
+            <button onClick={props.onClose} className="button-modal">
+              Fermer
+            </button>
+          </div>{" "}
         </div>
-
-        <button onClick={props.onClose} className="button-modal">
-          Fermer
-        </button>
       </div>
     </div>
   );
