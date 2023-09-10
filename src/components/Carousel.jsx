@@ -1,12 +1,52 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState, useEffect } from "react";
+import "../styles/components/carousel.scss";
 
-const Carousel = ({ projets }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
-};
+function Carousel({ images }) {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [imageOpacity, setImageOpacity] = useState(1);
 
-const goToNext = () => {
-  setCurrentIndex((prevIndex) => (prevIndex + 1) % projets.length);
-};
+  const nextImage = () => {
+    setImageOpacity(0);
+    setTimeout(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+      setImageOpacity(0.7);
+    }, 500);
+  };
+
+  const prevImage = () => {
+    setImageOpacity(0);
+    setTimeout(() => {
+      setCurrentImageIndex(
+        (prevIndex) => (prevIndex - 1 + images.length) % images.length
+      );
+      setImageOpacity(0.7);
+    }, 500);
+  };
+
+  useEffect(() => {
+    setImageOpacity(0.7);
+  }, [currentImageIndex]);
+
+  return (
+    <div className="carousel-container">
+      <div className="carousel">
+        <img
+          className="carousel-image"
+          src={images[currentImageIndex]}
+          alt={`Image ${currentImageIndex + 1}`}
+          style={{ opacity: imageOpacity }}
+        />
+        <div className="buttons">
+          <button className="carousel-button next" onClick={nextImage}>
+            Suivant &#8250;
+          </button>{" "}
+          <button className="carousel-button prev" onClick={prevImage}>
+            &#8249; Précédent
+          </button>
+        </div>
+      </div>
+    </div>
+  );
+}
 
 export default Carousel;

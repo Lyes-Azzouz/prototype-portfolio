@@ -1,6 +1,7 @@
 import React from "react";
 import projectsData from "../projets.json";
 import "../styles/components/modal.scss";
+import Carousel from "./Carousel";
 
 function Modal(props) {
   const { project } = props;
@@ -18,21 +19,28 @@ function Modal(props) {
     <div className="modal">
       <div className={modalClasses.join(" ")}>
         <h2>{project.title}</h2>
-        <p>{project.modalText}</p>
 
-        {project.imageModal.map((image, index) => (
-          <img key={index} src={image} alt={`Image ${index + 1}`} />
-        ))}
+        <Carousel images={project.imageModal} />
+        <div className="modal-elements">
+          <p>{project.modalText}</p>
+          <div className="logos">
+            {project.langagelogo.map((logo, index) => (
+              <img key={index} src={logo} alt={`Logo ${index + 1}`} />
+            ))}
+          </div>
 
-        {project.langagelogo.map((logo, index) => (
-          <img key={index} src={logo} alt={`Logo ${index + 1}`} />
-        ))}
+          <a
+            href={project.lienprojet}
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            Lien vers le repository GitHub
+          </a>
+        </div>
 
-        <a href={project.lienprojet} target="_blank" rel="noopener noreferrer">
-          Lien vers le projet
-        </a>
-
-        <button onClick={props.onClose}>Fermer</button>
+        <button onClick={props.onClose} className="button-modal">
+          Fermer
+        </button>
       </div>
     </div>
   );

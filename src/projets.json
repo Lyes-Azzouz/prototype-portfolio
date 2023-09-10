@@ -6,13 +6,19 @@
     "description": "Intégration complète d'un site d'agence de location.",
     "modalText": "Vel facilisis volutpat est velit. Gravida dictum fusce ut placerat orci. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Id leo in vitae turpis massa. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Cras semper auctor neque vitae tempus quam. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Pellentesque elit ullamcorper dignissim cras tincidunt. Morbi tristique senectus et netus et malesuada. Orci ac auctor augue mauris augue neque. Ipsum nunc aliquet bibendum enim facilisis gravida. Quis hendrerit dolor magna eget est lorem ipsum. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Feugiat in ante metus dictum at tempor commodo ullamcorper. Consectetur libero id faucibus nisl. Aliquam nulla facilisi cras fermentum odio eu. Semper viverra nam libero justo. Eu ultrices vitae auctor eu augue ut lectus. Facilisis gravida neque convallis a cras semper. Pretium lectus quam id leo in vitae turpis massa. Morbi leo urna molestie at elementum. Integer quis auctor elit sed vulputate mi sit amet. Vitae sapien pellentesque habitant morbi tristique. Sit amet risus nullam eget felis eget nunc lobortis mattis. Dolor sed viverra ipsum nunc aliquet bibendum. Ac auctor augue mauris augue. Elementum integer enim neque volutpat ac tincidunt vitae. Lorem ipsum dolor sit amet consectetur adipiscing. Donec pretium vulputate sapien nec sagittis aliquam. Scelerisque in dictum non consectetur a erat nam. Imperdiet nulla malesuada pellentesque elit eget gravida cum. Gravida quis blandit turpis cursus in hac habitasse. Amet purus gravida quis blandit turpis cursus in. Volutpat sed cras ornare arcu dui vivamus arcu felis.",
     "imageModal": [
-      "images/logo_projets/Booki.png"
+      "images/images_website/booki_1.png",
+      "images/images_website/booki_2.png",
+      "images/images_website/booki_tablet_1.png",
+      "images/images_website/booki_tablet_2.png",
+      "images/images_website/booki_mobile_1.png",
+      "images/images_website/booki_mobile_2.png",
+      "images/images_website/booki_mobile_3.png"
     ],
     "langagelogo": [
       "images/logo_langages/html-5.png",
       "images/logo_langages/css-3.png"
     ],
-    "lienprojet": "https://github.com/votre_utilisateur/projet1"
+    "lienprojet": "https://github.com/Lyes-Azzouz/Projet-2-Site-Booki-OCR.git"
   },
   {
     "id": 2,
@@ -24,7 +30,8 @@
       "images/logo_projets/kasa.png"
     ],
     "langagelogo": [
-
+      "images/logo_langages/react.png",
+      "images/logo_langages/sass.png"
     ],
     "lienprojet": "https://github.com/votre_utilisateur/projet2"
   },
