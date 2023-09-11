@@ -15,9 +15,8 @@ const Skills = () => {
     "Gestion de projets & Communication": false,
   });
 
-  const [isScrolling, setIsScrolling] = useState(false); // gere l'état du défilement
+  const [isScrolling, setIsScrolling] = useState(false);
 
-  // Fonction qui gère les modifications de la sélection de compétences
   const handleSkillToggle = (skill) => {
     setSelectedSkills((prevState) => ({
       ...prevState,
@@ -25,7 +24,6 @@ const Skills = () => {
     }));
   };
 
-  // Fonction qui gère l'affichage au scroll
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;

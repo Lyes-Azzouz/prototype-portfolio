@@ -1,10 +1,10 @@
 const path = require("path");
 
 module.exports = {
-  entry: "./src/index.js", // Chemin vers le point d'entrée de votre application
+  entry: "./src/index.js",
   output: {
-    path: path.resolve(__dirname, "dist"), // Dossier de sortie pour les fichiers bundle
-    filename: "bundle.js", // Nom du fichier de bundle
+    path: path.resolve(__dirname, "dist"),
+    filename: "bundle.js",
   },
   module: {
     rules: [
@@ -12,7 +12,7 @@ module.exports = {
         test: /\.(js|jsx)$/,
         exclude: /node_modules/,
         use: {
-          loader: "babel-loader", // Utilisation de Babel pour la transpilation
+          loader: "babel-loader",
           options: {
             presets: ["@babel/preset-env", "@babel/preset-react"],
           },
@@ -20,27 +20,27 @@ module.exports = {
       },
       {
         test: /\.css$/,
-        use: ["style-loader", "css-loader"], // Gestion des fichiers CSS
+        use: ["style-loader", "css-loader"],
       },
       {
         test: /\.(png|jpg|gif|svg)$/,
         use: [
           {
-            loader: "file-loader", // Gestion des fichiers d'images
+            loader: "file-loader",
             options: {
-              outputPath: "images", // Le dossier de sortie pour les images
+              outputPath: "images",
             },
           },
         ],
       },
       {
         test: /\.s[ac]ss$/i,
-        use: ["style-loader", "css-loader", "sass-loader"], // Gestion des fichiers SCSS
+        use: ["style-loader", "css-loader", "sass-loader"],
       },
     ],
   },
   resolve: {
-    extensions: [".js", ".jsx"], // Extensions de fichiers à résoudre
+    extensions: [".js", ".jsx"],
     fallback: {
       http: require.resolve("stream-http"),
       https: require.resolve("https-browserify"),
@@ -49,5 +49,5 @@ module.exports = {
       util: require.resolve("util/"),
     },
   },
-  mode: "development", // Mode de développement
+  mode: "development",
 };

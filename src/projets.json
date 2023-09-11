@@ -27,13 +27,21 @@
     "description": "Création from scratch d'une application de location immobilière.",
     "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
     "imageModal": [
-      "images/logo_projets/kasa.png"
+      "images/images_website/kasa_1.png",
+      "images/images_website/kasa_2.png",
+      "images/images_website/kasa_3.png",
+      "images/images_website/kasa_4.png",
+      "images/images_website/kasa_mobile_1.png",
+      "images/images_website/kasa_mobile_2.png",
+      "images/images_website/kasa_mobile_3.png",
+      "images/images_website/kasa_mobile_4.png",
+      "images/images_website/kasa_mobile_5.png"
     ],
     "langagelogo": [
       "images/logo_langages/react.png",
       "images/logo_langages/sass.png"
     ],
-    "lienprojet": "https://github.com/votre_utilisateur/projet2"
+    "lienprojet": "https://github.com/Lyes-Azzouz/kasa-ocr.git"
   },
   {
     "id": 3,
@@ -42,7 +50,7 @@
     "description": "Plannification complète du projet d'un client. ",
     "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
     "imageModal": [
-
+     "images/images_website/none.png"
     ],
     "langagelogo": [
 
@@ -70,10 +78,16 @@
     "description": "Création d'une page web dynamique pour une architecte d'intérieur, développement de fonctionnalités côté front-end.",
     "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
     "imageModal": [
-
+      "images/images_website/sb_1.png",
+      "images/images_website/sb_2.png",
+      "images/images_website/sb_3.png",
+      "images/images_website/sb_4.png",
+      "images/images_website/sb_5.png"
     ],
     "langagelogo": [
-
+  "images/logo_langages/html-5.png",
+  "images/logo_langages/css-3.png",
+  "images/logo_langages/js.png"
     ],
     "lienprojet": "https://github.com/votre_utilisateur/projet5"
   },

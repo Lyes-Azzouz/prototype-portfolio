@@ -16,14 +16,18 @@
   object-fit: contain;
   transition: opacity 0.3s ease;
   margin: 0;
+  border: 2px solid #2cb67d;
+  background: #2cb67d57;
+  border-radius: 5px;
+  box-shadow: inset -1px 1px 18px 2px #2cb67d;
 }
 
 .buttons {
   position: relative;
   top: 0;
   display: flex;
-  justify-content: space-between;
-  width: 100%;
+  justify-content: center;
+  margin: 15px auto;
   gap: 20px;
 }
 .carousel-button {
@@ -34,6 +38,7 @@
   justify-content: center;
   padding: 8px;
   border: none;
+  border-radius: 5px;
   cursor: pointer;
   z-index: 9;
   width: 100px;
