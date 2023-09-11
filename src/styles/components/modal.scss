@@ -14,7 +14,7 @@
   opacity: 0.992;
 }
 .modal-content {
-  background: linear-gradient(to top, #000000, #362a5a);
+  background: linear-gradient(to top, #0f0e17, #2e2f3efd);
   margin: 50px;
   padding: 50px 0;
   border-radius: 5px;
@@ -28,13 +28,13 @@
   justify-content: space-between;
   gap: 40px;
   h2 {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 1.5em;
-    margin-bottom: 50px;
+    position: relative;
+    bottom: 2em;
     padding: 10px;
-    background: linear-gradient(to top, #000000b4, #291b52b7);
+
     border-radius: 5px;
-    box-shadow: -1px 10px 25px -7px #000000;
   }
   .modal-elements {
     display: flex;
@@ -46,9 +46,9 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      color: #fff;
+      color: #a7a9be;
       gap: 20px;
-      background: linear-gradient(to top, #000000, #7f5af05d);
+      background: linear-gradient(to top, #000000, #0f0e17);
       box-shadow: -1px 10px 18px 2px #000000;
       padding: 20px;
       border-radius: 5px;
@@ -58,7 +58,7 @@
         text-align: left;
         max-width: 500px;
         opacity: 0.8;
-        color: #fff;
+
         font-size: 1.3vh;
         line-height: 1.4;
         font-weight: 600;
@@ -66,10 +66,10 @@
       .logos {
         display: flex;
         gap: 20px;
-        box-shadow: #ffffff 0px 10px 57px -10px, #000000 0px 8px 28px -2px;
+        box-shadow: #ffffff 0px 10px 37px -18px, #000000 0px 8px 28px -2px;
         border-radius: 20px;
         padding: 6px 20px;
-        background-color: #00000071;
+        background-color: #2e2f3e9d;
 
         img {
           height: 34px;
@@ -77,13 +77,13 @@
         }
       }
       a {
-        color: #2cb67d;
+        color: #f25f4c;
       }
     }
   }
   .button-modal {
     margin-top: 20px;
-    background-color: #ee4c24;
+    background-color: #ff8906;
     color: white;
     padding: 10px 30px;
     border-radius: 5px;

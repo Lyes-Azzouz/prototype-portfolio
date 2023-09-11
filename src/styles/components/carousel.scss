@@ -16,10 +16,10 @@
   object-fit: contain;
   transition: opacity 0.3s ease;
   margin: 0;
-  border: 2px solid #2cb67d;
-  background: #2cb67d57;
+  border: 2px solid #e5317031;
+  background: #ff8b061b;
   border-radius: 5px;
-  box-shadow: inset -1px 1px 18px 2px #2cb67d;
+  box-shadow: inset -1px 1px 18px 2px rgba(255, 139, 6, 0.087);
 }
 
 .buttons {
@@ -31,7 +31,7 @@
   gap: 20px;
 }
 .carousel-button {
-  background-color: #2cb67d;
+  background-color: #2e2f3e;
   color: antiquewhite;
   display: flex;
   align-items: center;
