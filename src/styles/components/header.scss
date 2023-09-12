@@ -149,6 +149,48 @@
     right: 50px;
     top: 330px;
   }
+
+  @media (max-width: 1024px) {
+    .texts-content {
+      .titles {
+        position: relative;
+        right: 203px;
+      }
+
+      h1 {
+        font-size: 2.2em;
+        width: 600px;
+      }
+
+      .subtitle-wd {
+        font-size: 1em;
+        left: 8px;
+        bottom: 25px;
+      }
+
+      p {
+        width: 300px;
+        position: relative;
+        top: -30px;
+        left: 315px;
+        font-size: 0.7em;
+      }
+
+      button {
+        height: 40px;
+        width: 120px;
+        margin: 0px;
+        font-size: 0.7em;
+        position: relative;
+        left: 395px;
+        top: -20px;
+      }
+    }
+
+    .rectangle {
+      display: none;
+    }
+  }
 }
 
 @keyframes titles-animate {

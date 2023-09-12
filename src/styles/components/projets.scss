@@ -230,3 +230,106 @@ section {
     visibility: visible;
   }
 }
+@media (max-width: 1024px) {
+  section {
+    margin: 60px 0 0 0;
+    .projets-content {
+      width: 352px;
+      .cards-content {
+        display: grid;
+        grid-template-columns: 1fr 0fr;
+        gap: 20px;
+        max-height: 308px;
+
+        scroll-behavior: smooth;
+        border-top: 5px solid rgb(22, 22, 26);
+        border-bottom: 5px solid rgb(22, 22, 26);
+        padding: 20px 20px;
+        border-radius: 25px;
+        background-color: rgb(22, 22, 26, 0.3);
+
+        .project-card {
+          position: relative;
+          width: 20px;
+          font-size: 0.7em;
+          .card-content {
+            overflow-y: hidden;
+            h3 {
+              font-size: 0.88em;
+              padding: 5px;
+              margin: 0 10px;
+              width: 120px;
+            }
+
+            img {
+              height: 1.1em;
+              padding: 1px;
+            }
+
+            p {
+              font-size: 1em;
+              padding: 5px;
+
+              margin: 0px;
+              color: #94a1b2;
+              transition: all 1s;
+              border-radius: 5px;
+              animation: text-cards-animate 4s ease forwards;
+              width: 120px;
+            }
+          }
+        }
+
+        .project-card:hover {
+          background: linear-gradient(#212121, #212121) padding-box,
+            linear-gradient(145deg, transparent 35%, #fff, #0b633e) border-box;
+          transition: all 1s ease;
+          .card-content {
+            img {
+              border-radius: 5px;
+              transform: scale(1.1);
+              box-shadow: #000000 0px 20px 27px -5px, #000000 0px 8px 16px -8px;
+              transition: all 0.7s ease;
+            }
+
+            h3,
+            p {
+              transition: all 0.8s ease;
+              background-color: rgba(0, 0, 0, 0.256);
+              border-radius: 5px;
+            }
+          }
+        }
+
+        .project-card::before {
+          width: 60px;
+        }
+      }
+    }
+  }
+
+  .top-texts {
+    position: relative;
+    bottom: 20px;
+    left: -73px;
+    h2 {
+      font-size: 1em;
+    }
+
+    p {
+      font-size: 0.7em;
+    }
+  }
+
+  @keyframes cards-animate {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+      height: 100px;
+      width: 100px;
+    }
+  }
+}
