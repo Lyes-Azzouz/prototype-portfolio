@@ -1,11 +1,9 @@
 import React from "react";
 import "../styles/components/header.scss";
-import Projets from "./Projets";
 
 const Header = () => {
   return (
-    <header className="header">
-      <div id="accueil"></div>
+    <header className="header" id="accueil">
       <div className="container">
         <div className="texts-content">
           <div className="titles">
@@ -54,8 +52,7 @@ const Header = () => {
           <button className="cv">Curriculum vitae</button>
         </div>
       </div>{" "}
-      <div className="rectangle"></div>
-      <Projets />
+      <div className="rectangle" id="projets"></div>
     </header>
   );
 };

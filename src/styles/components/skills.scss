@@ -1,17 +1,15 @@
 .skills {
-  margin: 0 auto;
+  width: 100%;
   color: #fff;
-
-  #skills {
-    height: 50px;
-    margin-bottom: 180px;
-    position: relative;
-    top: 170px;
-  }
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
   .filter-bar {
     font-family: "Oxygen", sans-serif;
     width: 100%;
+    margin: 0 50px;
     padding: 30px;
     display: flex;
     border-radius: 10px;
@@ -43,18 +41,18 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 150px;
 
     h1 {
-      font-size: 5em;
+      font-size: 3em;
       position: relative;
-      left: 1500px;
+      left: 3500px;
       font-weight: 600;
     }
 
     p {
       position: relative;
-      right: 1500px;
+      right: 3500px;
+      font-size: 2.5em;
     }
 
     h1,
@@ -81,18 +79,17 @@
   }
 
   .sidebar {
-    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 60px;
+    margin: 0 50px;
 
     #subtitle {
       padding: 0px 280px 100px 280px;
       text-align: center;
       font-weight: 200;
-      font-size: 3em;
+      font-size: 1.5vw;
       font-family: "Oxygen", sans-serif;
       border-bottom: 2px solid #72757e;
     }
@@ -174,7 +171,7 @@
 @keyframes title-animate {
   0% {
     opacity: 0;
-    left: 1500px;
+    left: 3500px;
   }
 
   50% {
@@ -190,7 +187,7 @@
 @keyframes p-animate {
   0% {
     opacity: 0;
-    right: 1500px;
+    right: 3500px;
   }
 
   50% {
@@ -200,5 +197,200 @@
   100% {
     opacity: 1;
     right: 0px;
+  }
+}
+
+@media screen and (max-width: 1390px) {
+  .skills {
+    .filter-bar {
+      label {
+        font-size: 0.9em;
+      }
+    }
+
+    .sidebar {
+      .sidebar-content {
+        span {
+          color: #010101;
+          font-weight: 500;
+          font-size: 1.4em;
+        }
+
+        .techno-front,
+        .techno-back,
+        .bdd,
+        .dev-tools,
+        .logiciels,
+        .versioning,
+        .communication {
+          width: 400px;
+        }
+      }
+
+      #check-msg {
+        position: relative;
+        top: 30px;
+        width: auto;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1025px) {
+  .skills {
+    .filter-bar {
+      label {
+        font-size: 0.7em;
+      }
+    }
+
+    .sidebar {
+      .sidebar-content {
+        span {
+          color: #010101;
+          font-weight: 500;
+          font-size: 1.1em;
+        }
+
+        .techno-front,
+        .techno-back,
+        .bdd,
+        .dev-tools,
+        .logiciels,
+        .versioning,
+        .communication {
+          width: 320px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .skills {
+    .scroll-container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        font-size: 2em;
+        position: relative;
+        left: 3500px;
+        font-weight: 600;
+      }
+
+      p {
+        position: relative;
+        right: 3500px;
+
+        width: 300px;
+        font-size: 2em;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 769px) {
+  .skills {
+    .filter-bar {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      margin: 0 50px;
+      padding: 10px 0;
+      z-index: 2;
+      position: relative;
+      top: 70px;
+      border-bottom: 1px solid #000000;
+      background-color: #3d3e4294;
+      width: auto;
+
+      label {
+        padding: 15px;
+        font-size: 0.8em;
+        input[type="checkbox"] {
+          height: 15px;
+          accent-color: #2cb67d;
+          margin: 0;
+        }
+      }
+    }
+
+    .sidebar {
+      .sidebar-content {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: rgba(198, 198, 200, 0);
+        span {
+          color: #010101;
+          font-weight: 500;
+          font-size: 1em;
+        }
+
+        .techno-front,
+        .techno-back,
+        .bdd,
+        .dev-tools,
+        .logiciels,
+        .versioning,
+        .communication {
+          width: 400px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 560px) {
+  .skills {
+    .filter-bar {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 10px 0;
+      width: 440px;
+
+      label {
+        padding: 10px;
+        font-size: 0.7em;
+        input[type="checkbox"] {
+          height: 15px;
+          accent-color: #2cb67d;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 472px) {
+  .skills {
+    .filter-bar {
+      width: 340px;
+
+      label {
+        padding: 10px;
+        font-size: 0.8em;
+        input[type="checkbox"] {
+          height: 12px;
+          accent-color: #2cb67d;
+          margin: 0;
+        }
+      }
+    }
+
+    .sidebar {
+      .sidebar-content {
+        .techno-front,
+        .techno-back,
+        .bdd,
+        .dev-tools,
+        .logiciels,
+        .versioning,
+        .communication {
+          width: 300px;
+        }
+      }
+    }
   }
 }
