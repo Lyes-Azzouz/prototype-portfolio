@@ -233,9 +233,18 @@
     }
   }
 }
+@media screen and (max-width: 1312px) {
+  header {
+    position: relative;
+    top: 7vw;
+  }
+}
 
 @media screen and (max-width: 913px) {
   .header {
+    position: relative;
+    top: 12vw;
+    margin-bottom: 10vw;
     .texts-content {
       text-align: left;
 
@@ -250,17 +259,22 @@
     }
   }
 }
+@media screen and (min-width: 459px) and (max-width: 680px) {
+}
 
 @media screen and (max-width: 460px) {
   .header {
+    position: relative;
+    top: 12vw;
+    margin-bottom: 10vw;
     .texts-content {
       text-align: left;
+
       .titles {
         animation: titles-animate 1.7s ease-out forwards;
         display: flex;
         flex-direction: column;
         align-items: center;
-        margin-top: 160px;
       }
       h1 {
         font-size: 2em;

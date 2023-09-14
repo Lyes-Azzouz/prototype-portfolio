@@ -68,16 +68,22 @@
   }
 
   ul {
+    padding: 0;
+
     display: flex;
     justify-content: space-around;
     width: 50%;
-    gap: 50px;
+    gap: 30px;
     list-style-type: none;
     font-weight: 300;
     font-size: 0.7em;
     position: relative;
     left: 0;
     animation: liste-animate 6s ease forwards;
+
+    .line-mobile {
+      visibility: hidden;
+    }
 
     a {
       color: #fff;
@@ -229,5 +235,60 @@
   100% {
     opacity: 1;
     color: #ffffff;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .navbar-container {
+    height: 60px;
+
+    .square {
+      top: 60px;
+    }
+
+    .elements {
+      .me {
+        left: 30px;
+        top: 12px;
+
+        .name {
+          font-size: 0.8em;
+        }
+      }
+    }
+    ul {
+      flex-direction: column;
+      width: 10px;
+      font-size: 0.5em;
+      position: relative;
+      left: 25vh;
+      height: 50px;
+
+      .line-mobile {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 40px;
+        width: 40px;
+        visibility: visible;
+        position: relative;
+        background-color: #000000;
+        position: absolute;
+        right: 20px;
+        display: flex;
+        .line-menu {
+          height: 5px;
+          background-color: #fff;
+          width: 20px;
+        }
+      }
+      li {
+        visibility: hidden;
+      }
+    }
+
+    .line {
+      top: 60px;
+    }
   }
 }
