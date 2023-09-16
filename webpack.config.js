@@ -1,5 +1,5 @@
 const path = require("path");
-const HtmlWebpackPlugin = require("html-webpack-plugin"); // Importez HtmlWebpackPlugin
+const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -30,11 +30,11 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[path][name].[ext]",
+              publicPath: "/",
             },
           },
         ],
       },
-
       {
         test: /\.s[ac]ss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
@@ -53,8 +53,8 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "public/index.html", // Spécifiez le chemin du modèle HTML
+      template: "public/index.html",
     }),
-  ], // Ajoutez le plugin HtmlWebpackPlugin
+  ],
   mode: "development",
 };
