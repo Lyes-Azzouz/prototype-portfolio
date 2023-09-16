@@ -78,16 +78,16 @@
     "description": "Création d'une page web dynamique pour une architecte d'intérieur, développement de fonctionnalités côté front-end.",
     "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
     "imageModal": [
-      "images/images_website/sb_1.png",
-      "images/images_website/sb_2.png",
-      "images/images_website/sb_3.png",
-      "images/images_website/sb_4.png",
-      "images/images_website/sb_5.png"
+      "/images/images_website/sb_1.png",
+      "/images/images_website/sb_2.png",
+      "/images/images_website/sb_3.png",
+      "/images/images_website/sb_4.png",
+      "/images/images_website/sb_5.png"
     ],
     "langagelogo": [
-  "images/logo_langages/html-5.png",
-  "images/logo_langages/css-3.png",
-  "images/logo_langages/js.png"
+  "/images/logo_langages/html-5.png",
+  "/images/logo_langages/css-3.png",
+  "/images/logo_langages/js.png"
     ],
     "lienprojet": "https://github.com/votre_utilisateur/projet5"
   },

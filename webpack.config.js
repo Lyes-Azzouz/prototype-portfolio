@@ -29,11 +29,12 @@ module.exports = {
           {
             loader: "file-loader",
             options: {
-              outputPath: "images",
+              name: "[path][name].[ext]",
             },
           },
         ],
       },
+
       {
         test: /\.s[ac]ss$/i,
         use: ["style-loader", "css-loader", "sass-loader"],
