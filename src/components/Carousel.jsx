@@ -33,7 +33,7 @@ function Carousel({ images }) {
         <img
           className="carousel-image"
           src={images[currentImageIndex]}
-          alt={`Image ${currentImageIndex + 1}`}
+          alt={`img-modal ${currentImageIndex + 1}`}
           style={{ opacity: imageOpacity }}
         />
         <div className="buttons">

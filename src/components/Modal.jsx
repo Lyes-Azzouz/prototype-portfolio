@@ -1,5 +1,4 @@
 import React from "react";
-import projectsData from "../projets.json";
 import "../styles/components/modal.scss";
 import Carousel from "./Carousel";
 
