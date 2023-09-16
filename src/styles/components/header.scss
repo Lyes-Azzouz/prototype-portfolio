@@ -2,251 +2,113 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   height: 100vh;
+  margin-bottom: 100px;
+  background: url("../../../public/images/program.jpg") center;
+  background-size: cover;
+  .container {
+    .top-texts {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      text-align: center;
+      line-height: 0;
+    }
 
-  .top-texts {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    text-align: center;
-    line-height: 0;
-  }
-
-  .texts-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
-    text-align: center;
-    .titles {
-      animation: titles-animate 1.7s ease-out forwards;
+    .texts-content {
       display: flex;
       flex-direction: column;
       align-items: center;
-    }
-
-    h1 {
-      font-size: 5vw;
-      font-weight: 500;
-      color: #2cb67d;
-
-      #yes {
-        animation: letter-spawn 6s ease forwards;
+      gap: 10px;
+      text-align: center;
+      .titles {
+        animation: titles-animate 1.7s ease-out forwards;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
       }
 
-      #zzouz {
-        animation: letter-spawn 6s ease forwards;
-      }
-    }
+      h1 {
+        font-size: 5vw;
+        font-weight: 500;
+        color: #2cb67d;
 
-    .subtitle-wd {
-      font-size: 2vw;
-      display: flex;
+        #yes {
+          animation: letter-spawn 6s ease forwards;
+        }
 
-      #st-w,
-      #st-e-0,
-      #st-b,
-      #st-d,
-      #st-e-1,
-      #st-v,
-      #st-e-2,
-      #st-l,
-      #st-o,
-      #st-p-1,
-      #st-p-2,
-      #st-e-3,
-      #st-r {
-        opacity: 1;
-        position: relative;
-        bottom: 2em;
+        #zzouz {
+          animation: letter-spawn 6s ease forwards;
+        }
       }
 
-      #st-w {
-        animation: subtitle-header-anime 1.4s linear forwards;
+      .subtitle-wd {
+        font-size: 2vw;
+        display: flex;
+
+        #st-w,
+        #st-e-0,
+        #st-b,
+        #st-d,
+        #st-e-1,
+        #st-v,
+        #st-e-2,
+        #st-l,
+        #st-o,
+        #st-p-1,
+        #st-p-2,
+        #st-e-3,
+        #st-r {
+          opacity: 1;
+          position: relative;
+          bottom: 2em;
+        }
+
+        #st-w {
+          animation: subtitle-header-anime 1.4s linear forwards;
+        }
+
+        #st-v {
+          animation: subtitle-header-anime 1.9s linear forwards;
+        }
+
+        #st-e-2 {
+          animation: subtitle-header-anime 1.9s linear forwards;
+        }
+
+        #st-l {
+          animation: subtitle-header-anime 2.2s linear forwards;
+        }
+
+        #st-o {
+          animation: subtitle-header-anime 1.9s linear forwards;
+        }
+
+        #st-p-1 {
+          animation: subtitle-header-anime 2.2s linear forwards;
+        }
+
+        #st-b {
+          animation: subtitle-header-anime 1.7s linear forwards;
+        }
+
+        #st-p-2,
+        #st-e-3,
+        #st-r,
+        #st-e-0,
+        #st-d,
+        #st-e-1 {
+          animation: subtitle-header-anime 1.6s linear forwards;
+        }
       }
 
-      #st-v {
-        animation: subtitle-header-anime 1.9s linear forwards;
+      #l,
+      #a,
+      #w,
+      #d {
+        color: #ffffff;
       }
-
-      #st-e-2 {
-        animation: subtitle-header-anime 1.9s linear forwards;
-      }
-
-      #st-l {
-        animation: subtitle-header-anime 2.2s linear forwards;
-      }
-
-      #st-o {
-        animation: subtitle-header-anime 1.9s linear forwards;
-      }
-
-      #st-p-1 {
-        animation: subtitle-header-anime 2.2s linear forwards;
-      }
-
-      #st-b {
-        animation: subtitle-header-anime 1.7s linear forwards;
-      }
-
-      #st-p-2,
-      #st-e-3,
-      #st-r,
-      #st-e-0,
-      #st-d,
-      #st-e-1 {
-        animation: subtitle-header-anime 1.6s linear forwards;
-      }
-    }
-
-    #l,
-    #a,
-    #w,
-    #d {
-      color: #ffffff;
-    }
-
-    p {
-      color: #94a1b2;
-      font-weight: 400;
-      margin: 0 0 50px 0;
-      line-height: 1.5em;
-      animation: texte-animate 2s ease-out forwards;
-      padding: 0 250px;
-    }
-
-    button {
-      height: 60px;
-      width: 190px;
-      background-color: #7f5af0;
-      color: #fffffe;
-      font-weight: 600;
-      border-radius: 5px;
-      border: none;
-      cursor: pointer;
-    }
-  }
-
-  .rectangle {
-    height: 1px;
-    max-width: 100%;
-    background-color: #94a1b2;
-    animation: rectangle-animate 3.2s ease forwards;
-    margin: 100px 150px 0 150px;
-  }
-
-  @keyframes titles-animate {
-    0% {
-      transform: translateX(-90%);
-    }
-
-    100% {
-      transform: translateX(0%);
-    }
-  }
-
-  @keyframes letter-spawn {
-    0% {
-      opacity: 0;
-    }
-
-    50% {
-      opacity: 0.8;
-    }
-
-    100% {
-      opacity: 1;
-      color: #ffffff;
-    }
-  }
-
-  @keyframes subtitle-header-anime {
-    0% {
-      opacity: 0;
-      transform: translateY(-100%);
-    }
-
-    50% {
-      opacity: 0.5;
-      transform: translateY(40%);
-      color: #fff;
-    }
-
-    100% {
-      opacity: 1;
-      transform: translateY(40%);
-      color: #2cb67d;
-    }
-  }
-
-  @keyframes web-anime {
-    0% {
-      opacity: 0;
-    }
-
-    100% {
-      opacity: 1;
-      bottom: 0;
-      color: #fff;
-    }
-  }
-
-  @keyframes texte-animate {
-    0% {
-      opacity: 0;
-      transform: translate(-100%);
-    }
-
-    50% {
-      opacity: 0.3;
-    }
-
-    60% {
-      opacity: 0.3;
-    }
-
-    70% {
-      opacity: 0.3;
-    }
-
-    80% {
-      opacity: 0.3;
-    }
-
-    90% {
-      opacity: 0.3;
-    }
-
-    100% {
-      opacity: 1;
-      transform: translate(0px);
-    }
-  }
-
-  @keyframes rectangle-animate {
-    0% {
-      max-width: 0%;
-    }
-
-    100% {
-      max-width: 100%;
-    }
-  }
-}
-@media screen and (max-width: 1312px) {
-  header {
-    position: relative;
-    top: 7vw;
-  }
-}
-
-@media screen and (max-width: 913px) {
-  .header {
-    position: relative;
-    top: 12vw;
-    margin-bottom: 10vw;
-    .texts-content {
-      text-align: left;
 
       p {
         color: #94a1b2;
@@ -254,40 +116,209 @@
         margin: 0 0 50px 0;
         line-height: 1.5em;
         animation: texte-animate 2s ease-out forwards;
-        padding: 0 50px;
+        padding: 0 250px;
+      }
+
+      button {
+        height: 60px;
+        width: 190px;
+        background-color: #7f5af0;
+        color: #fffffe;
+        font-weight: 600;
+        border-radius: 5px;
+        border: none;
+        cursor: pointer;
+        z-index: 2;
+      }
+    }
+
+    .rectangle {
+      height: 1px;
+      max-width: 100%;
+      background-color: #94a1b2;
+      animation: rectangle-animate 3.2s ease forwards;
+      margin: 100px 150px 0 150px;
+    }
+
+    @keyframes titles-animate {
+      0% {
+        transform: translateX(-90%);
+      }
+
+      100% {
+        transform: translateX(0%);
+      }
+    }
+
+    @keyframes letter-spawn {
+      0% {
+        opacity: 0;
+      }
+
+      50% {
+        opacity: 0.8;
+      }
+
+      100% {
+        opacity: 1;
+        color: #ffffff;
+      }
+    }
+
+    @keyframes subtitle-header-anime {
+      0% {
+        opacity: 0;
+        transform: translateY(-100%);
+      }
+
+      50% {
+        opacity: 0.5;
+        transform: translateY(40%);
+        color: #fff;
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(40%);
+        color: #2cb67d;
+      }
+    }
+
+    @keyframes web-anime {
+      0% {
+        opacity: 0;
+      }
+
+      100% {
+        opacity: 1;
+        bottom: 0;
+        color: #fff;
+      }
+    }
+
+    @keyframes texte-animate {
+      0% {
+        opacity: 0;
+        transform: translate(-100%);
+      }
+
+      50% {
+        opacity: 0.3;
+      }
+
+      60% {
+        opacity: 0.3;
+      }
+
+      70% {
+        opacity: 0.3;
+      }
+
+      80% {
+        opacity: 0.3;
+      }
+
+      90% {
+        opacity: 0.3;
+      }
+
+      100% {
+        opacity: 1;
+        transform: translate(0px);
+      }
+    }
+
+    @keyframes rectangle-animate {
+      0% {
+        max-width: 0%;
+      }
+
+      100% {
+        max-width: 100%;
+      }
+    }
+  }
+
+  @media screen and (max-width: 1312px) {
+    header {
+      position: relative;
+      top: 7vw;
+    }
+  }
+}
+
+.header::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.874);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+@media screen and (max-width: 913px) {
+  .header {
+    .container {
+      .texts-content {
+        text-align: left;
+
+        p {
+          margin: 0 0 50px 0;
+          padding: 0 100px;
+        }
       }
     }
   }
 }
-@media screen and (min-width: 459px) and (max-width: 680px) {
+
+@media screen and (max-width: 580px) {
+  .header {
+    .container {
+      .texts-content {
+        text-align: left;
+
+        h1 {
+          font-size: 2em;
+        }
+        .subtitle-wd {
+          font-size: 1.1em;
+        }
+        p {
+          padding: 0px 20;
+        }
+      }
+    }
+  }
 }
 
-@media screen and (max-width: 460px) {
+@media screen and (max-width: 520px) {
   .header {
-    position: relative;
-    top: 12vw;
-    margin-bottom: 10vw;
-    .texts-content {
-      text-align: left;
+    .container {
+      .texts-content {
+        p {
+          padding: 0px 50px;
+          margin: 0 0 30px 0;
+        }
+      }
+    }
+  }
+}
 
-      .titles {
-        animation: titles-animate 1.7s ease-out forwards;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-      }
-      h1 {
-        font-size: 2em;
-      }
-      .subtitle-wd {
-        font-size: 1.1em;
-      }
-      p {
-        color: #94a1b2;
-        font-weight: 400;
-        font-size: 0.9em;
-        animation: texte-animate 2s ease-out forwards;
-        padding: 0px 20;
+@media screen and (max-width: 520px) {
+  .header {
+    .container {
+      margin: 50px 0 0 0;
+      .texts-content {
+        p {
+          font-size: 0.8em;
+        }
+
+        button {
+          height: 40px;
+          width: 130px;
+        }
       }
     }
   }
