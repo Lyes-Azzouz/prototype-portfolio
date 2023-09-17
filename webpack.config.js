@@ -1,5 +1,6 @@
 const path = require("path");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
+const CopyWebpackPlugin = require("copy-webpack-plugin");
 
 module.exports = {
   entry: "./src/index.js",
@@ -30,7 +31,6 @@ module.exports = {
             loader: "file-loader",
             options: {
               name: "[path][name].[ext]",
-              publicPath: "/",
             },
           },
         ],
@@ -54,6 +54,17 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: "public/index.html",
+    }),
+    new CopyWebpackPlugin({
+      patterns: [
+        {
+          from: "public",
+          to: "./",
+          globOptions: {
+            ignore: ["**/index.html"], // Ignore copying index.html as HtmlWebpackPlugin already handles it
+          },
+        },
+      ],
     }),
   ],
   mode: "development",
