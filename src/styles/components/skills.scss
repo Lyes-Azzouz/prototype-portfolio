@@ -91,7 +91,7 @@
       padding: 0px 280px 100px 280px;
       text-align: center;
       font-weight: 200;
-      font-size: 1.5vw;
+      font-size: 1em;
       font-family: "Oxygen", sans-serif;
       border-bottom: 2px solid #72757e;
     }
@@ -339,6 +339,12 @@
         .communication {
           width: 400px;
         }
+      }
+
+      #check-msg {
+        position: relative;
+        top: 30px;
+        width: 400px;
       }
     }
   }

@@ -27,12 +27,6 @@ class Navbar extends React.Component {
           </div>
           <div className="square"></div>
           <ul>
-            <div className="line-mobile">
-              <div className="line-menu"></div>
-              <div className="line-menu"></div>
-              <div className="line-menu"></div>
-            </div>
-
             <li
               className="liste"
               onClick={() => this.scrollToSection("accueil")}

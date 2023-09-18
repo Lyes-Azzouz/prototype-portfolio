@@ -30,24 +30,27 @@ const Header = () => {
           </div>
 
           <p>
-            Je m'appel Lyes, je suis un développeur web tout droit sorti de la
-            formation "Developpeur Web" chez OpenClassrooms, déterminé à
-            transformer des lignes de code en expériences numériques
-            exceptionnelles. Ma passion pour l'informatique au sens large a été
-            nourrie depuis mes 11 ans en créant des mods pour les jeux vidéo ,
-            mes premiers projets étaient donc orientés vers les jeux vidéos, où
-            j'ai acquis une solide expertise en modélisation , créativité etc..
-            J'ai par la suite continuer à alimenter cette passion en me
-            dirigeant dans le monde de de la programmation , c'est pour cela que
-            j'ai suivi un cursus complet chez OpenClassrooms. Je suis spécialisé
-            dans la création d'interfaces conviviales et élégantes qui mettent
-            en valeur chaque projet. L'utilisation de technologies telles que
-            Node.js, Express, MongoDB et React me permet de développer des
-            applications web performantes et interactives. Ayant récemment
-            achevé ma formation, je suis à l'aube de ma carrière en tant que
-            développeur web, et je suis impatient de contribuer à des projets
-            innovants. J'apporte un dévouement inébranlable à chaque tâche que
-            j'entreprends, et ma volonté de toujours apprendre et m'améliorer me
+            Je m'appelle Lyes, je suis un développeur front-end junior. J'ai
+            suivi une formation de développeur web chez Openclassroom qui m'a
+            permis de comprendre réellement le métier de développeur web. Au
+            cours de mon cursus de formation, j'ai aiguisé mes compétences de
+            manière approfondie, notamment grâce aux projets réalisés au cours
+            de la formation. D'autre part, j'ai aussi travaillé mes compétences
+            en parallèle de mon parcours afin d'optimiser mon apprentissage, ce
+            qui fait qu'aujourd'hui je suis capable de créer des applications
+            complètes en React, d'intégrer des maquettes, de créer des sites web
+            en JavaScript vanilla, et j'ai aussi développé des compétences côté
+            back-end dans une moindre mesure (création d'un serveur, d'une API,
+            connexions entre le front et le back, utilisation de frameworks tels
+            que Express.js, utilisation et mise en place d'une base de données
+            comme MongoDB). Je suis passionné par l'informatique depuis
+            l'enfance, mes premiers "travaux" étaient des mods pour des jeux
+            vidéo (je concevais des maps multijoueur et solo par pure passion).
+            J'ai appris à maîtriser des outils de conception 3D tels que 3ds
+            Max, à utiliser des moteurs graphiques, à faire du scriptage, etc.
+            Maintenant, je veux créer des applications web, mettre à profit mes
+            compétences ainsi qu'évoluer de manière constante dans ce domaine
+            qui me passionne tout autant.
           </p>
           <button className="cv">Curriculum vitae</button>
         </div>
