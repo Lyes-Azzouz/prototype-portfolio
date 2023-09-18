@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/components/navbar.scss";
+import Bmenu from "./Bmenu";
 
 class Navbar extends React.Component {
   scrollToSection = (sectionId) => {
@@ -12,6 +13,7 @@ class Navbar extends React.Component {
   render() {
     return (
       <nav className="navbar-container" onMouseOver={this.mouseOver}>
+        <Bmenu />
         <div className="elements">
           <div className="me">
             <div className="name">
