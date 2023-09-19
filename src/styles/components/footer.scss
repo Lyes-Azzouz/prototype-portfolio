@@ -3,7 +3,13 @@ footer {
   margin: 0 50px;
   display: flex;
   border-radius: 10px 10px 0 0;
-  background-color: #7f5af009;
+  background: linear-gradient(
+    to top,
+    #010101 10%,
+    #7f5af002 20%,
+    #7f5af005 30%,
+    #7f5af008 100%
+  );
   .container {
     display: flex;
     flex-direction: column;
@@ -49,7 +55,7 @@ footer {
       align-items: center;
       padding: 10px 20px;
       border-radius: 15px;
-      background-color: #7f5af00c;
+      background-color: #7f5af010;
       span:nth-child(1) {
         color: #7f5af0;
       }
@@ -68,7 +74,7 @@ footer {
       margin: 10px 0;
       position: relative;
       bottom: 40px;
-      background-color: #7f5af00c;
+      background-color: #7f5af010;
       padding: 4px 10px;
       border-radius: 15px;
       .name {

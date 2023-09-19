@@ -63,9 +63,9 @@ const Skills = () => {
           </div>
         </div>
         <span id="check-msg">
-          Afin de faciliter la visibilité des compétences, cochez les cases à
-          cocher des menus qui vous intéressent, puis dépliez le contenu de
-          chaque compétence en appuyant sur le bouton "+".
+          Afin de faciliter la visibilité des compétences, cochez les cases des
+          menus qui vous intéressent, puis dépliez le contenu de chaque
+          compétence en appuyant sur le bouton "+".
         </span>
 
         <div className="filter-bar">

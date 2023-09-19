@@ -45,12 +45,12 @@ const Header = () => {
             que Express.js, utilisation et mise en place d'une base de données
             comme MongoDB). Je suis passionné par l'informatique depuis
             l'enfance, mes premiers "travaux" étaient des mods pour des jeux
-            vidéo (je concevais des maps multijoueur et solo par pure passion).
-            J'ai appris à maîtriser des outils de conception 3D tels que 3ds
-            Max, à utiliser des moteurs graphiques, à faire du scriptage, etc.
-            Maintenant, je veux créer des applications web, mettre à profit mes
-            compétences ainsi qu'évoluer de manière constante dans ce domaine
-            qui me passionne tout autant.
+            vidéo (je concevais des maps multijoueur et solo par pure passion) ;
+            grâce à cette passion j'ai appris à maîtriser des logiciels de
+            conception 3D tels que 3ds Max, à utiliser des moteurs graphiques, à
+            faire du scriptage, etc. Maintenant, je veux créer des applications
+            web, mettre à profit mes compétences ainsi qu'évoluer de manière
+            constante dans ce domaine qui me passionne tout autant.
           </p>
           <button className="cv">Curriculum vitae</button>
         </div>
