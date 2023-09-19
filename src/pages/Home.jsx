@@ -5,6 +5,7 @@ import "../styles/pages/home.scss";
 import Contact from "../components/Contact";
 import Skills from "../components/Skills";
 import Projets from "../components/Projets";
+import Footer from "../components/Footer";
 
 const Home = () => {
   return (
@@ -14,6 +15,7 @@ const Home = () => {
       <Projets />
       <Skills />
       <Contact />
+      <Footer />
     </div>
   );
 };
