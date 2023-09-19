@@ -61,7 +61,11 @@
 }
 
 .menu-items li:hover {
-  background-color: #2cb67d;
+  background: linear-gradient(
+    to right,
+    hsla(240, 8%, 9) 20%,
+    hsla(155, 61%, 44%) 80%
+  );
 }
 
 @media screen and (max-width: 740px) {

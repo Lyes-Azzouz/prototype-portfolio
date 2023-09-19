@@ -1,15 +1,25 @@
 .contact {
   margin: 100px 50px 0 50px;
-
-  iframe {
-    margin: 0 auto;
-  }
-  #bloc-hide {
-    background-color: #16161a;
-    height: 250px;
-    width: 100%;
-    position: relative;
-    bottom: 150px;
+  .elements {
+    h3 {
+      background-color: #16161a;
+      position: relative;
+      top: 300px;
+      height: 200px;
+      text-align: center;
+      font-size: 3em;
+      color: #fff;
+    }
+    iframe {
+      margin: 0 auto;
+    }
+    #bloc-hide {
+      background-color: #010101;
+      height: 250px;
+      width: 100%;
+      position: relative;
+      bottom: 60px;
+    }
   }
 }
 

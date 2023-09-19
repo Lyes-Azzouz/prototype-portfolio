@@ -14,16 +14,19 @@ function Contact() {
 
   return (
     <div className="contact" id="contact">
-      <iframe
-        id="iframe"
-        width="100%"
-        height="1000px"
-        frameBorder="0"
-        marginHeight="0"
-        marginWidth="0"
-        title="Me contacter"
-      ></iframe>
-      <div id="bloc-hide"></div>
+      <div className="elements">
+        <h3>Me contacter</h3>
+        <iframe
+          id="iframe"
+          width="100%"
+          height="1000px"
+          frameBorder="0"
+          marginHeight="0"
+          marginWidth="0"
+          title="Me contacter"
+        ></iframe>
+        <div id="bloc-hide"></div>
+      </div>
     </div>
   );
 }
