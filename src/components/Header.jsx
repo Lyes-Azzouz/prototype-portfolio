@@ -1,4 +1,5 @@
 import React from "react";
+import { FaDownload } from "react-icons/fa";
 import "../styles/components/header.scss";
 
 const Header = () => {
@@ -52,7 +53,9 @@ const Header = () => {
             web, mettre à profit mes compétences ainsi qu'évoluer de manière
             constante dans ce domaine qui me passionne tout autant.
           </p>
-          <button className="cv">Curriculum vitae</button>
+          <button className="cv" title="Télécharger">
+            Curriculum vitae <FaDownload />
+          </button>
         </div>
       </div>{" "}
       <div className="rectangle" id="projets"></div>

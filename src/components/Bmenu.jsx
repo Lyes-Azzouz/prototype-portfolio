@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "../styles/components/bmenu.scss";
 
 const Bmenu = () => {
@@ -7,6 +6,15 @@ const Bmenu = () => {
 
   const toggleMenu = () => {
     setIsOpen(!isOpen);
+  };
+
+  // Meme fonction que pour la Navbar
+  const scrollToSection = (sectionId) => {
+    const section = document.getElementById(sectionId);
+    if (section) {
+      section.scrollIntoView({ behavior: "smooth" });
+      setIsOpen(false);
+    }
   };
 
   return (
@@ -17,10 +25,10 @@ const Bmenu = () => {
         <div className="bar"></div>
       </div>
       <ul className="menu-items">
-        <li>Accueil</li>
-        <li>Services</li>
-        <li>À propos</li>
-        <li>Contact</li>
+        <li onClick={() => scrollToSection("accueil")}>Accueil</li>
+        <li onClick={() => scrollToSection("projets")}>Projets</li>
+        <li onClick={() => scrollToSection("skills")}>Compétences</li>
+        <li onClick={() => scrollToSection("contact")}>Contact</li>
       </ul>
     </div>
   );
