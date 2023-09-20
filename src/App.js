@@ -6,11 +6,9 @@ import "@fortawesome/fontawesome-svg-core/styles.css";
 
 const App = () => {
   return (
-    <BrowserRouter basename="/prototype-portfolio">
+    <BrowserRouter>
       <Routes>
-        <Route path="/Home" element={<Home />} />
-        <Route path="/" element={<Navigate to="/Home" />} />
-        {/* <Route path="Contact" element={<Contact />} /> */}
+        <Route path="/*" element={<Home />} />
       </Routes>
     </BrowserRouter>
   );
