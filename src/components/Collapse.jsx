@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPlus } from "@fortawesome/free-solid-svg-icons";
 import "../styles/components/collapse.scss";
 
-const Collapse = ({ title, content }) => {
+const Collapse = ({ title, children }) => {
   const [isCollapsed, setIsCollapsed] = useState(true);
 
   const handleToggleCollapse = () => {
@@ -18,7 +18,7 @@ const Collapse = ({ title, content }) => {
           <FontAwesomeIcon icon={faPlus} />
         </button>
       </div>
-      {!isCollapsed && <p className="collapse-content">{content}</p>}
+      {!isCollapsed && <div className="collapse-content">{children}</div>}
     </div>
   );
 };

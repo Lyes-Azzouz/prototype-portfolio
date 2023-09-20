@@ -36,6 +36,19 @@
     font-size: 1em;
     transition: 1s ease;
     padding: 20px 0;
+    max-height: 2500px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    ul {
+      color: #fffffe;
+      max-height: 1500px;
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      margin-right: 20px;
+    }
   }
 }
 

@@ -90,42 +90,152 @@ const Skills = () => {
                   selectedSkills["Front-end"] ? "open" : ""
                 }`}
               >
-                <Collapse
-                  title={"Javascript"}
-                  content={
-                    "Je possède une bonne maîtrise de JavaScript, l'un des langages de programmation les plus puissants et polyvalents du web. Mon niveau de maîtrise s'étend au dela des bases pour le coté front-end, ce qui me permet de créer des applications web complexes et interactives. Je suis capable de manipuler le Document Object Model (DOM) avec JavaScript pour créer des pages web dynamiques. Cela inclut l'ajout, la suppression et la modification d'éléments HTML en temps réel. Je sais gérer les événements en JavaScript, que ce soit pour la gestion de clics, de survols de souris ou d'autres interactions, je peux créer des interfaces utilisateur réactives.  J'ai une bonne compréhension de la programmation orientée objet (POO) ce qui me permet de structurer mon code de manière propre et efficace. J'utilise des classes, des objets et l'héritage pour mettre en place des solutions efficaces dans le code. Je sais utiliser des opérations asynchrones en JavaScript en utilisant des promesses (Promises) et des fonctions asynchrones (async/await). Cela me permet de traiter des opérations telles que les appels API.  Je suis familier avec l'écosystème JavaScript, y compris les gestionnaires de paquets tels que npm et les outils de construction comme Webpack ou bien les frameworks front-end comme React. Je peux configurer des projets, gérer les dépendances , créer des projets from scratch. "
-                  }
-                />
-                <Collapse
-                  title={"Html"}
-                  content={
-                    "Je possède une solide maitrise en HTML , le langage fondamental pour la création de sites web. Je peux concevoir des mises en page complexes et attrayantes, en veillant à ce qu'elles soient compatibles avec différents navigateurs. De plus je maitrise la syntaxe Jsx pour react ce qui me rend polyvalent dans la construction d'un site simple en html ou bien à l'aide d'un frameworks comme react."
-                  }
-                />
-                <Collapse
-                  title={"Css"}
-                  content={
-                    "Je possède une solide maîtrise en CSS, le second langage fondamental du web. Mon expertise en CSS me permet de créer des mises en pages solides et attrayante au visuel. Je mâitrise Flex et Grid , le positionnement , toutes les propriétés de bases , je sais utiliser SASS afin de mieux organiser le code , je sais intégrer une maquette de manière fidèle et optimisée."
-                  }
-                />
-                <Collapse
-                  title={"Sass"}
-                  content={
-                    "Je sais utiliser Sass pour simplifier et améliorer la gestion du style CSS. Cette technologie me permet de maintenir un code CSS propre et modulaire tout en aillant accès à des fonctionnalités telles que les variables."
-                  }
-                />
-                <Collapse
-                  title={"React"}
-                  content={
-                    "J'ai une bonne maîtrise de  React, je sais créer des interfaces utilisateur interactives. Je peux développer des composants réutilisables et structurer des applications web réactives avec plus de facilité, offrant ainsi une expérience utilisateur fluide. De plus ce portfolio est conçu avec React ce qui m'a permis d'améliorer mes compétences dans ce frameworks.Je sais gérer l'état local des composants avec les states et les props , je sais propager des données entre composants enfants et parents. Je sais utiliser React Routeur afin de gérer la navigation , je sais définir des routes , j'utilise des paramètres d'URL ou des liens. Je sais utiliser des bibliotheque comme Axios pour les appels API. Je sais intégrer des bibliotheques externes comme les packages NPM dans mon application React de manière efficace. Je sais déployer une application React , notament sur GitHub Pages. J'ai une bonne compréhension des hooks comme useState , useEffect ou useContext afin de gérer l'état et les effets dans les composants."
-                  }
-                />
-                <Collapse
-                  title={"Responsive Desing"}
-                  content={
-                    " Je sais concevoir un site qui s'adapte aux formats d'écrans, ce qui signifie que mes sites web sont conçus pour offrir une expérience utilisateur optimale sur divers appareils (desktop , tablet , mobile). Je maîtrise les media query afin d'adapter le site aux formats que je souhaites."
-                  }
-                />
+                <Collapse title={"Javascript"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Maîtrise avancée de JavaScript, un langage de
+                        programmation puissant et polyvalent.
+                      </li>
+                      <li>
+                        Développement front-end avancé, capable de créer des
+                        applications web complexes et interactives.
+                      </li>
+                      <li>
+                        Manipulation du DOM (Document Object Model) avec
+                        JavaScript pour créer des pages web dynamiques.
+                      </li>
+                      <li>
+                        Gestion des événements en JavaScript pour créer des
+                        interfaces utilisateur réactives.
+                      </li>
+                      <li>
+                        Bonne compréhension de la programmation orientée objet
+                        (POO) pour une structuration efficace du code.
+                      </li>
+                      <li>
+                        Utilisation de classes, d'objets et de l'héritage pour
+                        une meilleure organisation du code.
+                      </li>
+                      <li>
+                        Maîtrise des opérations asynchrones en JavaScript avec
+                        l'utilisation de promesses (Promises) et de fonctions
+                        asynchrones (async/await).
+                      </li>
+                      <li>
+                        Familiarité avec l'écosystème JavaScript, y compris npm,
+                        Webpack et les frameworks front-end comme React.
+                      </li>
+                      <li>
+                        Capacité à configurer des projets, gérer les dépendances
+                        et créer des projets à partir de zéro.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"HTML"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Maîtrise de HTML, le langage fondamental pour créer des
+                        sites web.
+                      </li>
+                      <li>
+                        Conception de mises en page complexes et compatibles
+                        avec différents navigateurs.
+                      </li>
+                      <li>
+                        Utilisation de la syntaxe JSX pour React, permettant une
+                        polyvalence dans la création de sites web.
+                      </li>
+                      <li>
+                        Capacité à créer des sites simples en HTML ou à
+                        travailler avec des frameworks tels que React.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"CSS"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Maîtrise de CSS, le second langage fondamental du web.
+                      </li>
+                      <li>
+                        Expertise en Flexbox et CSS Grid pour la mise en page.
+                      </li>
+                      <li>
+                        Utilisation de SASS pour organiser et simplifier le code
+                        CSS.
+                      </li>
+                      <li>Intégration fidèle et optimisée de maquettes.</li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Sass"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de Sass pour simplifier la gestion du style
+                        CSS.
+                      </li>
+                      <li>Maintien d'un code CSS propre et modulaire.</li>
+                      <li>
+                        Utilisation de fonctionnalités telles que les variables.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"React"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Bonne maîtrise de React pour créer des interfaces
+                        utilisateur interactives.
+                      </li>
+                      <li>Développement de composants réutilisables.</li>
+                      <li>Structuration d'applications web réactives.</li>
+                      <li>
+                        Gestion de l'état local des composants avec les states
+                        et les props.
+                      </li>
+                      <li>
+                        Utilisation de React Router pour gérer la navigation.
+                      </li>
+                      <li>
+                        Intégration de bibliothèques externes et gestion des
+                        dépendances.
+                      </li>
+                      <li>
+                        Déploiement d'applications React, notamment sur GitHub
+                        Pages.
+                      </li>
+                      <li>
+                        Compréhension des hooks tels que useState, useEffect et
+                        useContext.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Responsive Design"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Conception de sites web adaptatifs pour une expérience
+                        utilisateur optimale sur différents appareils.
+                      </li>
+                      <li>
+                        Maîtrise des media queries pour l'adaptation aux
+                        différents formats d'écran.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
               </div>
             </div>
             <div className="techno-back">
