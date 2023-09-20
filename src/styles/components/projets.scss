@@ -414,3 +414,188 @@ section {
     }
   }
 }
+@media screen and (max-width: 420px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    margin-top: 300px;
+  }
+
+  .top-texts {
+    animation: text-cards-animate 3s ease forwards;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+
+    h2 {
+      font-size: 2em;
+      font-weight: 400;
+    }
+  }
+
+  .projets-content {
+    height: 800px;
+
+    display: flex;
+    flex-direction: column;
+
+    .cards-content {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+      height: 500px;
+      width: 300px;
+      overflow-y: hidden;
+      scroll-behavior: smooth;
+      border-top: 5px solid rgb(22, 22, 26);
+      border-bottom: 5px solid rgb(22, 22, 26);
+      padding: 2em;
+      border-radius: 25px;
+      background-color: rgb(22, 22, 26, 0.3);
+
+      .project-card {
+        position: relative;
+        padding: 20px;
+        background: linear-gradient(#16161a, #16161a) padding-box,
+          linear-gradient(145deg, transparent 35%, #7f5af0, #7f5af0) border-box;
+        border: 2px solid transparent;
+        border-radius: 8px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        cursor: pointer;
+
+        .card-content {
+          margin: 0;
+          padding: 0;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          align-items: center;
+
+          h3 {
+            font-size: 0.88em;
+            font-weight: 400;
+            padding: 10px;
+            margin: 0 10px;
+            opacity: 0.7;
+            animation: text-cards-animate 2s ease forwards;
+            transition: all 1s;
+            width: 150px;
+          }
+
+          img {
+            height: 1.5em;
+            padding: 10px;
+            border-radius: 5px;
+            transition: all 1s;
+            box-shadow: rgb(127, 90, 240, 0.7) 0px 3px 27px -5px,
+              rgb(0, 0, 0) 0px 8px 16px -8px;
+            animation: text-cards-animate 3s ease forwards;
+          }
+
+          p {
+            font-size: 0.7em;
+            padding: 10px;
+            margin: 10px;
+            color: #94a1b2;
+            transition: all 1s;
+            border-radius: 5px;
+            animation: text-cards-animate 4s ease forwards;
+            width: 160px;
+          }
+        }
+      }
+
+      .project-card:hover {
+        background: linear-gradient(#212121, #212121) padding-box,
+          linear-gradient(145deg, transparent 35%, #fff, #0b633e) border-box;
+        transition: all 1s ease;
+        .card-content {
+          img {
+            border-radius: 5px;
+            transform: scale(1.1);
+            box-shadow: #000000 0px 20px 27px -5px, #000000 0px 8px 16px -8px;
+            transition: all 0.7s ease;
+          }
+
+          h3,
+          p {
+            transition: all 0.8s ease;
+            background-color: rgba(0, 0, 0, 0.256);
+            border-radius: 5px;
+          }
+        }
+      }
+
+      .project-card::before {
+        width: 100px;
+        height: 100px;
+        content: "";
+        position: absolute;
+        background-color: #7f5af0;
+        z-index: -9;
+        filter: blur(70px);
+        transition: all 1s;
+        animation: light 3.3s ease-out forwards;
+      }
+
+      .project-card:hover::before {
+        filter: blur(50px);
+        background-color: #fff;
+      }
+    }
+
+    .chevrons {
+      display: flex;
+      flex-direction: row;
+      height: 30px;
+      width: 250px;
+      top: 50px;
+      left: 0;
+      justify-content: center;
+      gap: 180px;
+      align-items: center;
+      padding: 10px 20px;
+      animation: light 2.2s ease-out forwards;
+      border-left: 5px solid #7f5af0;
+      border-right: 5px solid #7f5af0;
+      border-bottom: none;
+      border-top: none;
+      border-radius: 25px;
+      background-color: rgb(22, 22, 26, 0.6);
+
+      button {
+        border: none;
+        color: white;
+        background: none;
+        cursor: pointer;
+      }
+
+      button:active {
+        color: #7f5af0;
+      }
+
+      .up,
+      .down {
+        font-size: 30px;
+      }
+    }
+  }
+
+  @keyframes cards-animate {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+      height: 250px;
+      width: 250px;
+    }
+  }
+}

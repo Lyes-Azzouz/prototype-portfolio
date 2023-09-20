@@ -401,3 +401,37 @@
     }
   }
 }
+@media screen and (max-width: 376px) {
+  .skills {
+    .filter-bar {
+      width: 300px;
+
+      label {
+        padding: 10px;
+        font-size: 0.8em;
+        input[type="checkbox"] {
+          height: 12px;
+          accent-color: #2cb67d;
+          margin: 0;
+        }
+      }
+    }
+
+    .sidebar {
+      .sidebar-content {
+        .techno-front,
+        .techno-back,
+        .bdd,
+        .dev-tools,
+        .logiciels,
+        .versioning,
+        .communication {
+          width: 250px;
+        }
+      }
+      #check-msg {
+        max-width: 250px;
+      }
+    }
+  }
+}
