@@ -57,6 +57,7 @@ const Projets = () => {
               className="project-card"
               key={index}
               onClick={() => handleProjetClick(index)}
+              title="Cliquez pour afficher les détails du projet"
             >
               <div className="card-content">
                 <h3>{projet.title}</h3>

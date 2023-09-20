@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faPlus } from "@fortawesome/free-solid-svg-icons";
+import { faPlus, faTimes } from "@fortawesome/free-solid-svg-icons"; // Importez l'icône pour "x"
 import "../styles/components/collapse.scss";
 
 const Collapse = ({ title, children }) => {
@@ -11,11 +11,15 @@ const Collapse = ({ title, children }) => {
   };
 
   return (
-    <div className="collapse">
+    <div
+      className={`collapse ${isCollapsed ? "" : "open"}`}
+      onClick={handleToggleCollapse}
+    >
       <div className="collapse-header">
         <h2>{title}</h2>
         <button className="collapse-toggle" onClick={handleToggleCollapse}>
-          <FontAwesomeIcon icon={faPlus} />
+          <FontAwesomeIcon icon={isCollapsed ? faPlus : faTimes} />{" "}
+          {/* Utilisez l'icône appropriée en fonction de l'état */}
         </button>
       </div>
       {!isCollapsed && <div className="collapse-content">{children}</div>}
