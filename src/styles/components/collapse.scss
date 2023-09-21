@@ -58,3 +58,8 @@
     width: 250px;
   }
 }
+@media screen and (max-width: 375px) {
+  .collapse {
+    width: 220px;
+  }
+}

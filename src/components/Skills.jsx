@@ -440,11 +440,12 @@ const Skills = () => {
                   </div>
                 </Collapse>
 
-                <Collapse title={"Waze"}>
+                <Collapse title={"Wave"}>
                   <div className="collapse-content">
                     <ul>
                       <li>
-                        Utilisation de Waze (ou autre) pour la navigation.
+                        Utilisation de Wave pour aider à la correction des
+                        erreurs.
                       </li>
                     </ul>
                   </div>
