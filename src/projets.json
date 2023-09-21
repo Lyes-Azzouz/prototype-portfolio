@@ -4,7 +4,7 @@
     "title": "Intégration d'une maquette en HTML & CSS",
     "image": "images/logo_projets/Booki.png",
     "description": "Intégration complète d'un site d'agence de location.",
-    "modalText": "Vel facilisis volutpat est velit. Gravida dictum fusce ut placerat orci. Massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada. Lorem dolor sed viverra ipsum nunc aliquet bibendum enim. Id leo in vitae turpis massa. Tortor vitae purus faucibus ornare suspendisse sed nisi lacus sed. Cras semper auctor neque vitae tempus quam. Blandit volutpat maecenas volutpat blandit aliquam etiam erat velit scelerisque. Pellentesque elit ullamcorper dignissim cras tincidunt. Morbi tristique senectus et netus et malesuada. Orci ac auctor augue mauris augue neque. Ipsum nunc aliquet bibendum enim facilisis gravida. Quis hendrerit dolor magna eget est lorem ipsum. Ac feugiat sed lectus vestibulum mattis ullamcorper velit. Feugiat in ante metus dictum at tempor commodo ullamcorper. Consectetur libero id faucibus nisl. Aliquam nulla facilisi cras fermentum odio eu. Semper viverra nam libero justo. Eu ultrices vitae auctor eu augue ut lectus. Facilisis gravida neque convallis a cras semper. Pretium lectus quam id leo in vitae turpis massa. Morbi leo urna molestie at elementum. Integer quis auctor elit sed vulputate mi sit amet. Vitae sapien pellentesque habitant morbi tristique. Sit amet risus nullam eget felis eget nunc lobortis mattis. Dolor sed viverra ipsum nunc aliquet bibendum. Ac auctor augue mauris augue. Elementum integer enim neque volutpat ac tincidunt vitae. Lorem ipsum dolor sit amet consectetur adipiscing. Donec pretium vulputate sapien nec sagittis aliquam. Scelerisque in dictum non consectetur a erat nam. Imperdiet nulla malesuada pellentesque elit eget gravida cum. Gravida quis blandit turpis cursus in hac habitasse. Amet purus gravida quis blandit turpis cursus in. Volutpat sed cras ornare arcu dui vivamus arcu felis.",
+    "modalText": "Intégration d'un site de location immobilière avec Html et css seulement.",
     "imageModal": [
       "images/images_website/booki_1.png",
       "images/images_website/booki_2.png",
@@ -25,7 +25,7 @@
     "title": "Création d'une application web avec React & Sass",
     "image": "images/logo_projets/kasa.png",
     "description": "Création from scratch d'une application de location immobilière.",
-    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+    "modalText": "Création d'une application de location immobilère avec react , utilisations de states et hooks , créations de composants réutilisables , utilisation de sass pour optimiser et simplifier la mise en place du style.",
     "imageModal": [
       "images/images_website/kasa_1.png",
       "images/images_website/kasa_2.png",
@@ -48,7 +48,7 @@
     "title": "Plannification du projet d'un client",
     "image": "images/logo_projets/menu-maker.png",
     "description": "Plannification complète du projet d'un client. ",
-    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+    "modalText": "Plannification complète du projet d'un client , avec trello pour la gestion de projets , réalisation d'un tableau kanban pour répertorier les tâches à accomplir , utilisation de slack pour la communication , mise en place de planning pour les réunions et de deads lines pour les étapes du projets.",
     "imageModal": [
      "images/images_website/none.png"
     ],
@@ -62,7 +62,7 @@
     "title": "Développement d'un back end avec Node.js, Express.js, MongoDB",
     "image": "images/logo_projets/mon_vieux_grimoire.png",
     "description": "Création d'un back-end (Server & API RESTful) et mise en place d'une base de données.",
-    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+    "modalText": "Création d'un back-end complet et fonctionnel , gestion de l'authentication et sécurisation des données(sécurisation des tokens , cryptage des données sensible comme les mots de passes etc.) , mise en place de logique métier(traitement de données , gestion des erreurs etc.) , mise en place de models de données , création et installation d'une API , utilisation de postman pour les test , mise en place et utilisation de mongoDB pour la base de données , utilisation de node.js et le frameworks express.js pour mettre en place le serveur et toutes les fontionnalités requises au bon fonctionnement du back-end.",
     "imageModal": [
 
     ],
@@ -76,7 +76,7 @@
     "title": "Création d'une page web dynamique avec Javascript",
     "image": "images/logo_projets/sophie-bluel.png",
     "description": "Création d'une page web dynamique pour une architecte d'intérieur, développement de fonctionnalités côté front-end.",
-    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+    "modalText": "Création d'une page web dynamique en rendant une page web html css classique et statique en une réelle page interactive grace à javascript , manipulation du dom , création d'une fenêtre modal , mise en place de fonctionnalité coté front comme l'implémentaiton du CRUD , création d'une page login , mise en place d'un systeme de gestion de projets (contexte du site) , connection au back end préexistant , utilisation de fetch pour les appel API , fonctions asynchrones pour les promise (await , async) etc.",
     "imageModal": [
       "images/images_website/sb_1.png",
       "images/images_website/sb_2.png",
