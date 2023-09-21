@@ -8,8 +8,8 @@ const Footer = () => {
       <div className="container">
         <div className="elements">
           <div className="icon">
-            <FaLinkedin style={{ fontSize: "3em", color: "#0A66C2" }} />{" "}
-            <FaGithub style={{ fontSize: "3em", color: "#FFF" }} />
+            <FaLinkedin style={{ color: "#0A66C2" }} />{" "}
+            <FaGithub style={{ color: "#FFF" }} />
           </div>
           <ul>
             <a href="">Linkedin</a>

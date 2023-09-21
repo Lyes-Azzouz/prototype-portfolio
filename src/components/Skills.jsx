@@ -245,10 +245,74 @@ const Skills = () => {
                   selectedSkills["Back-end"] ? "open" : ""
                 }`}
               >
-                <Collapse title={"Node.js"} content={"je test"} />
-                <Collapse title={"Express.js"} content={"je test"} />
-                <Collapse title={"Api RESTful"} content={"je test"} />
-                <Collapse title={"Bcrypt"} content={"je test"} />
+                <Collapse title={"Node.js"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Maîtrise de Node.js, un environnement d'exécution
+                        JavaScript côté serveur.
+                      </li>
+                      <li>
+                        Création de serveurs web et d'applications back-end avec
+                        Node.js.
+                      </li>
+                      <li>
+                        Gestion des requêtes HTTP, des routes et des middlewares
+                        avec Express.js.
+                      </li>
+                      <li>
+                        Utilisation de packages npm pour étendre les
+                        fonctionnalités de Node.js.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Express.js"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation d'Express.js, un framework web pour Node.js.
+                      </li>
+                      <li>
+                        Création d'applications web modérément complexes avec
+                        Express.js.
+                      </li>
+                      <li>Routage, middleware et gestion des requêtes HTTP.</li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"API RESTful"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Conception et développement d'API RESTful pour l'échange
+                        de données.
+                      </li>
+                      <li>
+                        Utilisation des méthodes HTTP pour créer des points de
+                        terminaison.
+                      </li>
+                      <li>Sérialisation et désérialisation de données JSON.</li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Bcrypt"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de Bcrypt pour le hachage sécurisé des mots
+                        de passe.
+                      </li>
+                      <li>
+                        Implémentation de l'authentification sécurisée dans les
+                        applications.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
               </div>
             </div>
             <div className="bdd">
@@ -258,7 +322,15 @@ const Skills = () => {
                   selectedSkills["Base de données"] ? "open" : ""
                 }`}
               >
-                <Collapse title={"MongoDB"} content={"Je test"} />
+                <Collapse title={"MongoDB"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Familiarité avec MongoDB, une base de données NoSQL.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
               </div>
             </div>
 
@@ -269,8 +341,26 @@ const Skills = () => {
                   selectedSkills["Gestion de version"] ? "open" : ""
                 }`}
               >
-                <Collapse title={"Git"} content={"test"} />
-                <Collapse title={"GitHub"} content={"test"} />
+                <Collapse title={"Git"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Maîtrise de Git, un système de contrôle de version.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"GitHub"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de GitHub pour le stockage et la
+                        collaboration de code.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
               </div>
             </div>
           </div>
@@ -282,10 +372,43 @@ const Skills = () => {
                   selectedSkills["Logiciels"] ? "open" : ""
                 }`}
               >
-                <Collapse title={"VsCode"} content={"test"} />
-                <Collapse title={"3dsmax"} content={"test"} />
-                <Collapse title={"Figma"} content={"test"} />
-                <Collapse title={"Gimp"} content={"test"} />
+                <Collapse title={"VsCode"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Maîtrise d'outils tels que Visual Studio Code (VsCode)
+                        pour le développement.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"3dsmax"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>Utilisation de 3dsmax pour la modélisation 3D.</li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Figma"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation avancée de Figma pour la conception
+                        d'interfaces utilisateur.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Gimp"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>Maîtrise de Gimp pour l'édition d'images.</li>
+                    </ul>
+                  </div>
+                </Collapse>
               </div>
             </div>
 
@@ -296,18 +419,115 @@ const Skills = () => {
                   selectedSkills["Outils de développement"] ? "open" : ""
                 }`}
               >
-                <Collapse title={"Google DevTool"} content={"test"} />
-                <Collapse title={"Google Lighthouse"} content={"test"} />
-                <Collapse title={"Waze"} content={"test"} />
-                <Collapse title={"Json web token"} content={"test"} />
-                <Collapse title={"Shemas.org"} content={"test"} />
-                <Collapse title={"JSONVue"} content={"test"} />
-                <Collapse title={"Talent Api tester"} content={"test"} />
-                <Collapse title={"Postman"} content={"test"} />
-                <Collapse title={"Swagger"} content={"test"} />
-                <Collapse title={"Regex101"} content={"test"} />
+                <Collapse title={"Google DevTool"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation avancée de Google DevTool pour le débogage.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Google Lighthouse"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de Google Lighthouse pour l'optimisation des
+                        performances.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Waze"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de Waze (ou autre) pour la navigation.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Json web token"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de JSON Web Tokens (JWT) pour
+                        l'authentification et l'autorisation.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Shemas.org"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Connaissance de Shemas.org pour la structuration des
+                        données.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"JSONVue"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de JSONVue pour la visualisation et la
+                        manipulation de données JSON.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Talent Api tester"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de Talent Api Tester pour le test d'APIs.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Postman"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de Postman pour le développement et le test
+                        d'APIs.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Swagger"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de Swagger pour la documentation et le test
+                        d'APIs.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Regex101"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de Regex101 pour la création et le test
+                        d'expressions régulières.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
               </div>
             </div>
+
             <div className="communication">
               <span className="com">Gestion de projets & Communication</span>
               <div
@@ -317,9 +537,35 @@ const Skills = () => {
                     : ""
                 }`}
               >
-                <Collapse title={"Trello"} content={"test"} />
-                <Collapse title={"Microsoft Teams"} content={"test"} />
-                <Collapse title={"Slack"} content={"test"} />
+                <Collapse title={"Trello"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>Utilisation de Trello pour la gestion de projets.</li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Microsoft Teams"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Collaboration avec Microsoft Teams pour la communication
+                        d'équipe.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
+
+                <Collapse title={"Slack"}>
+                  <div className="collapse-content">
+                    <ul>
+                      <li>
+                        Utilisation de Slack pour la communication et la
+                        collaboration d'équipe.
+                      </li>
+                    </ul>
+                  </div>
+                </Collapse>
               </div>
             </div>
           </div>
