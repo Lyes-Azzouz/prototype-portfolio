@@ -12,8 +12,10 @@ const Footer = () => {
             <FaGithub style={{ color: "#FFF" }} />
           </div>
           <ul>
-            <a href="">Linkedin</a>
-            <a href="">Github</a>
+            <a href="https://www.linkedin.com/in/ly%C3%A8s-azzouz-4283aa202/">
+              Linkedin
+            </a>
+            <a href="https://github.com/Lyes-Azzouz">Github</a>
           </ul>
         </div>
         <div className="text">
