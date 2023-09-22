@@ -58,7 +58,6 @@ const Header = () => {
           </button>
         </div>
       </div>{" "}
-      <div className="rectangle" id="projets"></div>
     </header>
   );
 };

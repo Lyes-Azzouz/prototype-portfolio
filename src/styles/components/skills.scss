@@ -5,6 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin: 50px auto 0 auto;
   #skills {
     height: 100px;
   }
@@ -301,8 +302,7 @@
       margin: 0 50px;
       padding: 10px 0;
       z-index: 2;
-      position: relative;
-      top: 70px;
+
       border-bottom: 1px solid #000000;
       background-color: #3d3e4294;
       width: auto;

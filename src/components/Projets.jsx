@@ -47,6 +47,7 @@ const Projets = () => {
 
   return (
     <section className="projets">
+      <div id="projets"></div>
       <div className="top-texts">
         <h2>Mes projets</h2>
       </div>
