@@ -19,7 +19,6 @@ const Collapse = ({ title, children }) => {
         <h2>{title}</h2>
         <button className="collapse-toggle" onClick={handleToggleCollapse}>
           <FontAwesomeIcon icon={isCollapsed ? faPlus : faTimes} />{" "}
-          {/* Utilisez l'icône appropriée en fonction de l'état */}
         </button>
       </div>
       {!isCollapsed && <div className="collapse-content">{children}</div>}
