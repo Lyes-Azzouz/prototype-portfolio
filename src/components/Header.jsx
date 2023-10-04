@@ -3,6 +3,15 @@ import { FaDownload } from "react-icons/fa";
 import "../styles/components/header.scss";
 
 const Header = () => {
+  const downloadPdf = () => {
+    const link = document.createElement("a");
+    link.href = "./lyes-azzouz-cv.pdf";
+    link.download = "CurriculumVitae.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  };
+
   return (
     <header className="header" id="accueil">
       <div className="container">
@@ -53,7 +62,7 @@ const Header = () => {
             web, mettre à profit mes compétences ainsi qu'évoluer de manière
             constante dans ce domaine qui me passionne tout autant.
           </p>
-          <button className="cv" title="Télécharger">
+          <button className="cv" title="Télécharger" onClick={downloadPdf}>
             Curriculum vitae <FaDownload />
           </button>
         </div>
