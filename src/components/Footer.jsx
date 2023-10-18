@@ -25,7 +25,6 @@ const Footer = () => {
         </div>
         <div className="me">
           <div className="name">
-            {" "}
             <span className="l">L</span>
             <span className="a">A</span>
           </div>
