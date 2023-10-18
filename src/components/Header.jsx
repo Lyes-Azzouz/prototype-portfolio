@@ -5,7 +5,7 @@ import "../styles/components/header.scss";
 const Header = () => {
   const downloadPdf = () => {
     const link = document.createElement("a");
-    link.href = "./Lyes_Azzouz_CV_dev.pdf";
+    link.href = "./lyes-azzouz-cv.pdf";
     link.download = "CurriculumVitae.pdf";
     document.body.appendChild(link);
     link.click();
