@@ -29,6 +29,7 @@ const Bmenu = () => {
         <li onClick={() => scrollToSection("projets")}>Projets</li>
         <li onClick={() => scrollToSection("skills")}>Compétences</li>
         <li onClick={() => scrollToSection("contact")}>Contact</li>
+        <li onClick={() => scrollToSection("links")}>Liens utiles</li>
       </ul>
     </div>
   );
