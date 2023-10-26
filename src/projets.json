@@ -106,62 +106,7 @@
 
     ],
     "lienprojet": "https://github.com/votre_utilisateur/projet6"
-  },
-  {
-    "id": 7,
-    "title": "Lorem ipsum dolor sit amet",
-    "image": "",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    "imageModal": [
-
-    ],
-    "langagelogo": [
-
-    ],
-    "lienprojet": "https://github.com/votre_utilisateur/projet6"
-  },
-  {
-    "id": 8,
-    "title": "Lorem ipsum dolor sit amet",
-    "image": "",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    "imageModal": [
-
-    ],
-    "langagelogo": [
-
-    ],
-    "lienprojet": "https://github.com/votre_utilisateur/projet6"
-  },
-  {
-    "id": 9,
-    "title": "Lorem ipsum dolor sit amet",
-    "image": "",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    "imageModal": [
-
-    ],
-    "langagelogo": [
-
-    ],
-    "lienprojet": "https://github.com/votre_utilisateur/projet6"
-  },
-  {
-    "id": 10,
-    "title": "Lorem ipsum dolor sit amet",
-    "image": "",
-    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
-    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
-    "imageModal": [
-
-    ],
-    "langagelogo": [
-
-    ],
-    "lienprojet": "https://github.com/votre_utilisateur/projet6"
   }
+
 
 ]
