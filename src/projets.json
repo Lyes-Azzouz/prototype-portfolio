@@ -55,9 +55,10 @@
      "images/images_website/none.png"
     ],
     "langagelogo": [
-
+        "images/logo_langages/slack.png",
+        "images/logo_langages/trello.png"
     ],
-    "lienprojet": "https://github.com/votre_utilisateur/projet3"
+    "lienprojet": "https://trello.com/invite/b/mMklG23Y/ATTI0346c3a11e2b12ebae439e50f16488610113DF7F/modele-kanban"
   },
   {
     "id": 4,
@@ -69,9 +70,10 @@
 
     ],
     "langagelogo": [
-
+       "images/logo_langages/node.png",
+       "images/logo_langages/mongodb.png"
     ],
-    "lienprojet": "https://github.com/votre_utilisateur/projet4"
+    "lienprojet": "https://github.com/Lyes-Azzouz/projet_7_ocr_mon_vieux_grimoire_backend.git"
   },
   {
     "id": 5,
@@ -91,21 +93,21 @@
   "images/logo_langages/css-3.png",
   "images/logo_langages/js.png"
     ],
-    "lienprojet": "https://github.com/votre_utilisateur/projet5"
+    "lienprojet": "https://github.com/Lyes-Azzouz/Projet-3-site-Sophie-Bluel-OCR.git"
   },
   {
     "id": 6,
     "title": "Debbugage et optimisation d'un site web",
     "image": "images/logo_projets/nina-carducci.png",
     "description": "Débbugage et optimisation d'un site de photographe (debbuage de fonctionnalités + optimisation du site + SEO ...)",
-    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+    "modalText": "Débogage et optimisation d'un site web pour un photographe, optimisation des images, réglage du carrousel d'images, débogage de la barre de filtrage, ajustement du contraste, utilisation des outils de développement de Google (Lighthouse, etc.), utilisation de WAVE, mise en place du référencement local (via Schema.org), optimisation du code.", 
     "imageModal": [
 
     ],
     "langagelogo": [
-
+ "images/logo_langages/dev_tools.png"
     ],
-    "lienprojet": "https://github.com/votre_utilisateur/projet6"
+    "lienprojet": "https://github.com/Lyes-Azzouz/Site-Photographe-Nina-Carducci-debbuged.git"
   }
 
 
