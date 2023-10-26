@@ -20,48 +20,7 @@
     ],
     "lienprojet": "https://github.com/Lyes-Azzouz/Projet-2-Site-Booki-OCR.git"
   },
-  {
-    "id": 1,
-    "title": "Intégration d'une maquette en HTML & CSS",
-    "image": "images/logo_projets/Booki.png",
-    "description": "Intégration complète d'un site d'agence de location.",
-    "modalText": "Intégration d'un site de location immobilière avec Html et css seulement.",
-    "imageModal": [
-      "images/images_website/booki_1.png",
-      "images/images_website/booki_2.png",
-      "images/images_website/booki_tablet_1.png",
-      "images/images_website/booki_tablet_2.png",
-      "images/images_website/booki_mobile_1.png",
-      "images/images_website/booki_mobile_2.png",
-      "images/images_website/booki_mobile_3.png"
-    ],
-    "langagelogo": [
-      "images/logo_langages/html-5.png",
-      "images/logo_langages/css-3.png"
-    ],
-    "lienprojet": "https://github.com/Lyes-Azzouz/Projet-2-Site-Booki-OCR.git"
-  },
-  {
-    "id": 1,
-    "title": "Intégration d'une maquette en HTML & CSS",
-    "image": "images/logo_projets/Booki.png",
-    "description": "Intégration complète d'un site d'agence de location.",
-    "modalText": "Intégration d'un site de location immobilière avec Html et css seulement.",
-    "imageModal": [
-      "images/images_website/booki_1.png",
-      "images/images_website/booki_2.png",
-      "images/images_website/booki_tablet_1.png",
-      "images/images_website/booki_tablet_2.png",
-      "images/images_website/booki_mobile_1.png",
-      "images/images_website/booki_mobile_2.png",
-      "images/images_website/booki_mobile_3.png"
-    ],
-    "langagelogo": [
-      "images/logo_langages/html-5.png",
-      "images/logo_langages/css-3.png"
-    ],
-    "lienprojet": "https://github.com/Lyes-Azzouz/Projet-2-Site-Booki-OCR.git"
-  },
+  
 
   {
     "id": 2,
@@ -150,9 +109,9 @@
   },
   {
     "id": 7,
-    "title": "Debbugage et optimisation d'un site web",
-    "image": "images/logo_projets/nina-carducci.png",
-    "description": "Débbugage et optimisation d'un site de photographe (debbuage de fonctionnalités + optimisation du site + SEO ...)",
+    "title": "Lorem ipsum dolor sit amet",
+    "image": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
     "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
     "imageModal": [
 
@@ -164,10 +123,38 @@
   },
   {
     "id": 8,
-    "title": "Debbugage et optimisation d'un site web",
-    "image": "images/logo_projets/nina-carducci.png",
-    "description": "Débqetg et optimisation d'un site de photographe (debbuage de fonctionnalités + optimisation du site + SEO ...)",
-    "modalText": "Lorem ipsum dqsgamet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+    "title": "Lorem ipsum dolor sit amet",
+    "image": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
+    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+    "imageModal": [
+
+    ],
+    "langagelogo": [
+
+    ],
+    "lienprojet": "https://github.com/votre_utilisateur/projet6"
+  },
+  {
+    "id": 9,
+    "title": "Lorem ipsum dolor sit amet",
+    "image": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
+    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
+    "imageModal": [
+
+    ],
+    "langagelogo": [
+
+    ],
+    "lienprojet": "https://github.com/votre_utilisateur/projet6"
+  },
+  {
+    "id": 10,
+    "title": "Lorem ipsum dolor sit amet",
+    "image": "",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus.",
+    "modalText": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed non risus. Suspendisse lectus tortor, dignissim sit amet, adipiscing nec, ultricies sed, dolor.",
     "imageModal": [
 
     ],
