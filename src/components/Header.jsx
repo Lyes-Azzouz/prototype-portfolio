@@ -1,8 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { FaDownload } from "react-icons/fa";
+import { BsChevronDoubleDown } from "react-icons/bs";
 import "../styles/components/header.scss";
 
 const Header = () => {
+  const [texteVisible, setTexteVisible] = useState(false);
+
   const downloadPdf = () => {
     const link = document.createElement("a");
     link.href = "./lyes-azzouz-cv.pdf";
@@ -10,6 +13,10 @@ const Header = () => {
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
+  };
+
+  const toggleTexte = () => {
+    setTexteVisible(!texteVisible);
   };
 
   return (
@@ -23,9 +30,22 @@ const Header = () => {
               <span id="zzouz">zzouz</span>
             </h1>
             <div className="subtitle-wd">
-              <span id="st-w">W</span>
-              <span id="st-e-0">e</span>
-              <span id="st-b">b</span>
+              <span id="fe-f">F</span>
+              <span id="fe-r">r</span>
+              <span id="fe-o">o</span>
+              <span id="fe-n">n</span>
+              <span id="fe-t">t</span>
+              <span id="fe--">-</span>
+              <span id="fe-e">E</span>
+              <span id="fe-n-2">n</span>
+              <span id="fe-d">d</span>
+              <div className="espace"></div>
+              <span id="rt-r">R</span>
+              <span id="rt-e">e</span>
+              <span id="rt-a">a</span>
+              <span id="rt-c">c</span>
+              <span id="rt-t">t</span>
+              <div className="espace"></div>
               <span id="st-d">D</span>
               <span id="st-e-1">e</span>
               <span id="st-v">v</span>
@@ -38,30 +58,41 @@ const Header = () => {
               <span id="st-r">r</span>
             </div>
           </div>
+          <div className="about-me" onClick={toggleTexte}>
+            <span className="text">
+              {texteVisible ? "Masquer le texte" : "En savoir plus"}
+            </span>
+            <span className={`fleche ${texteVisible ? "active" : ""}`}>
+              <BsChevronDoubleDown />
+            </span>
+          </div>
+          {texteVisible && (
+            <p>
+              Je m'appelle Lyes, je suis un développeur front-end junior. J'ai
+              suivi une formation de développeur web chez Openclassroom qui m'a
+              permis de comprendre réellement le métier de développeur web. Au
+              cours de mon cursus de formation, j'ai aiguisé mes compétences de
+              manière approfondie, notamment grâce aux projets réalisés au cours
+              de la formation. D'autre part, j'ai aussi travaillé mes
+              compétences en parallèle de mon parcours afin d'optimiser mon
+              apprentissage, ce qui fait qu'aujourd'hui je suis capable de créer
+              des applications complètes en React, d'intégrer des maquettes, de
+              créer des sites web en JavaScript vanilla, et j'ai aussi développé
+              des compétences côté back-end dans une moindre mesure (création
+              d'un serveur, d'une API, connexions entre le front et le back,
+              utilisation de frameworks tels que Express.js, utilisation et mise
+              en place d'une base de données comme MongoDB). Je suis passionné
+              par l'informatique depuis l'enfance, mes premiers "travaux"
+              étaient des mods pour des jeux vidéo (je concevais des maps
+              multijoueur et solo par pure passion) ; grâce à cette passion j'ai
+              appris à maîtriser des logiciels de conception 3D tels que 3ds
+              Max, à utiliser des moteurs graphiques, à faire du scriptage, etc.
+              Maintenant, je veux créer des applications web, mettre à profit
+              mes compétences ainsi qu'évoluer de manière constante dans ce
+              domaine qui me passionne tout autant.
+            </p>
+          )}
 
-          <p>
-            Je m'appelle Lyes, je suis un développeur front-end junior. J'ai
-            suivi une formation de développeur web chez Openclassroom qui m'a
-            permis de comprendre réellement le métier de développeur web. Au
-            cours de mon cursus de formation, j'ai aiguisé mes compétences de
-            manière approfondie, notamment grâce aux projets réalisés au cours
-            de la formation. D'autre part, j'ai aussi travaillé mes compétences
-            en parallèle de mon parcours afin d'optimiser mon apprentissage, ce
-            qui fait qu'aujourd'hui je suis capable de créer des applications
-            complètes en React, d'intégrer des maquettes, de créer des sites web
-            en JavaScript vanilla, et j'ai aussi développé des compétences côté
-            back-end dans une moindre mesure (création d'un serveur, d'une API,
-            connexions entre le front et le back, utilisation de frameworks tels
-            que Express.js, utilisation et mise en place d'une base de données
-            comme MongoDB). Je suis passionné par l'informatique depuis
-            l'enfance, mes premiers "travaux" étaient des mods pour des jeux
-            vidéo (je concevais des maps multijoueur et solo par pure passion) ;
-            grâce à cette passion j'ai appris à maîtriser des logiciels de
-            conception 3D tels que 3ds Max, à utiliser des moteurs graphiques, à
-            faire du scriptage, etc. Maintenant, je veux créer des applications
-            web, mettre à profit mes compétences ainsi qu'évoluer de manière
-            constante dans ce domaine qui me passionne tout autant.
-          </p>
           <button className="cv" title="Télécharger" onClick={downloadPdf}>
             Curriculum vitae <FaDownload />
           </button>

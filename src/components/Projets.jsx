@@ -15,7 +15,7 @@ const Projets = () => {
   const handleScroll = (direction) => {
     const targetElement = scrollableContentRef.current;
     if (targetElement) {
-      const scrollAmount = 380;
+      const scrollAmount = 350;
       if (direction === "up") {
         targetElement.scrollTo({
           top: targetElement.scrollTop - scrollAmount,
