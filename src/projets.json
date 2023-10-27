@@ -6,13 +6,13 @@
     "description": "Intégration complète d'un site d'agence de location.",
     "modalText": "Intégration d'un site de location immobilière avec Html et css seulement.",
     "imageModal": [
-      "images/images_website/booki_1.png",
-      "images/images_website/booki_2.png",
-      "images/images_website/booki_tablet_1.png",
-      "images/images_website/booki_tablet_2.png",
-      "images/images_website/booki_mobile_1.png",
-      "images/images_website/booki_mobile_2.png",
-      "images/images_website/booki_mobile_3.png"
+      "images/images_website/booki_1.webp",
+      "images/images_website/booki_2.webp",
+      "images/images_website/booki_tablet_1.webp",
+      "images/images_website/booki_tablet_2.webp",
+      "images/images_website/booki_mobile_1.webp",
+      "images/images_website/booki_mobile_2.webp",
+      "images/images_website/booki_mobile_3.webp"
     ],
     "langagelogo": [
       "images/logo_langages/html-5.png",
@@ -29,15 +29,15 @@
     "description": "Création from scratch d'une application de location immobilière.",
     "modalText": "Création d'une application de location immobilère avec react , utilisations de states et hooks , créations de composants réutilisables , utilisation de sass pour optimiser et simplifier la mise en place du style.",
     "imageModal": [
-      "images/images_website/kasa_1.png",
-      "images/images_website/kasa_2.png",
-      "images/images_website/kasa_3.png",
-      "images/images_website/kasa_4.png",
-      "images/images_website/kasa_mobile_1.png",
-      "images/images_website/kasa_mobile_2.png",
-      "images/images_website/kasa_mobile_3.png",
-      "images/images_website/kasa_mobile_4.png",
-      "images/images_website/kasa_mobile_5.png"
+      "images/images_website/kasa_1.webp",
+      "images/images_website/kasa_2.webp",
+      "images/images_website/kasa_3.webp",
+      "images/images_website/kasa_4.webp",
+      "images/images_website/kasa_mobile_1.webp",
+      "images/images_website/kasa_mobile_2.webp",
+      "images/images_website/kasa_mobile_3.webp",
+      "images/images_website/kasa_mobile_4.webp",
+      "images/images_website/kasa_mobile_5.webp"
     ],
     "langagelogo": [
       "images/logo_langages/react.png",
@@ -52,7 +52,7 @@
     "description": "Plannification complète du projet d'un client. ",
     "modalText": "Plannification complète du projet d'un client , avec trello pour la gestion de projets , réalisation d'un tableau kanban pour répertorier les tâches à accomplir , utilisation de slack pour la communication , mise en place de planning pour les réunions et de deads lines pour les étapes du projets.",
     "imageModal": [
-     "images/images_website/none.png"
+     "images/images_website/none.webp"
     ],
     "langagelogo": [
         "images/logo_langages/slack.png",
@@ -82,11 +82,11 @@
     "description": "Création d'une page web dynamique pour une architecte d'intérieur, développement de fonctionnalités côté front-end.",
     "modalText": "Création d'une page web dynamique en rendant une page web html css classique et statique en une réelle page interactive grace à javascript , manipulation du dom , création d'une fenêtre modal , mise en place de fonctionnalité coté front comme l'implémentaiton du CRUD , création d'une page login , mise en place d'un systeme de gestion de projets (contexte du site) , connection au back end préexistant , utilisation de fetch pour les appel API , fonctions asynchrones pour les promise (await , async) etc.",
     "imageModal": [
-      "images/images_website/sb_1.png",
-      "images/images_website/sb_2.png",
-      "images/images_website/sb_3.png",
-      "images/images_website/sb_4.png",
-      "images/images_website/sb_5.png"
+      "images/images_website/sb_1.webp",
+      "images/images_website/sb_2.webp",
+      "images/images_website/sb_3.webp",
+      "images/images_website/sb_4.webp",
+      "images/images_website/sb_5.webp"
     ],
     "langagelogo": [
   "images/logo_langages/html-5.png",
