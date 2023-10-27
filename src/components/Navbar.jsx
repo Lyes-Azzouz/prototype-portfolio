@@ -54,7 +54,7 @@ class Navbar extends React.Component {
               Contact
             </li>
             <li className="liste" onClick={() => this.scrollToSection("links")}>
-              Liens professionnels
+              Liens utiles
             </li>
           </ul>
         </div>
