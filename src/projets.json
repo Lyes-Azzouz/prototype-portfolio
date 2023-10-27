@@ -4,7 +4,7 @@
     "title": "Intégration d'une maquette en HTML & CSS",
     "image": "images/logo_projets/Booki.webp",
     "description": "Intégration complète d'un site d'agence de location.",
-    "modalText": "Intégration d'un site de location immobilière avec Html et css seulement.",
+    "modalText": "Intégration d'un site de location pour les vacances style 'Booking' avec Html et css seulement.",
     "imageModal": [
       "images/images_website/booki_1.webp",
       "images/images_website/booki_2.webp",
@@ -51,9 +51,20 @@
     "title": "Plannification du projet d'un client",
     "image": "images/logo_projets/menu-maker.webp",
     "description": "Plannification complète du projet d'un client. ",
-    "modalText": "Plannification complète du projet d'un client , avec trello pour la gestion de projets , réalisation d'un tableau kanban pour répertorier les tâches à accomplir , utilisation de slack pour la communication , mise en place de planning pour les réunions et de deads lines pour les étapes du projets.",
+    "modalText": "Plannification complète du projet d'un client , avec trello pour la gestion de projets , réalisation d'un tableau kanban pour répertorier les tâches à accomplir , utilisation de slack pour la communication , mise en place de planning pour les réunions et de deads lines pour les étapes du projets. Création de fichiers pdf à destination du client afin de présenter le projet, création d'un fichier pdf à destination du propriétaire du projet afin de présenter le déroulement de la conception , création d'un pdf afin de présenter les outils de veilles ainsi que les articles concernant les technos utilisée , mise en place d'un fichier regroupant les spécifications technique.  ",
     "imageModal": [
-     "images/images_website/none.webp"
+     "images/images_website/kanban.webp",
+     "images/images_website/user_story_1.webp",
+     "images/images_website/user_story_2.webp",
+     "images/images_website/veille_2.webp",
+     "images/images_website/veille_1.webp",
+     "images/images_website/client_1.webp",
+     "images/images_website/client_2.webp",
+     "images/images_website/client_3.webp",
+     "images/images_website/plann_1.webp",
+     "images/images_website/plann_2.webp",
+     "images/images_website/plann_3.webp",
+     "images/images_website/spec_1.webp"
     ],
     "langagelogo": [
       "images/logo_langages/canva.webp",
@@ -69,7 +80,12 @@
     "description": "Création d'un back-end (Server & API RESTful) et mise en place d'une base de données.",
     "modalText": "Création d'un back-end complet et fonctionnel , gestion de l'authentication et sécurisation des données(sécurisation des tokens , cryptage des données sensible comme les mots de passes etc.) , mise en place de logique métier(traitement de données , gestion des erreurs etc.) , mise en place de models de données , création et installation d'une API , utilisation de postman pour les test , mise en place et utilisation de mongoDB pour la base de données , utilisation de node.js et le frameworks express.js pour mettre en place le serveur et toutes les fontionnalités requises au bon fonctionnement du back-end.",
     "imageModal": [
-
+      "images/images_website/Accueil.webp",
+      "images/images_website/signup.webp",
+      "images/images_website/livre_filed.webp",
+      "images/images_website/single_livre_admin.webp",
+      "images/images_website/succes_ajout.webp",
+      "images/images_website/ajout_livre.webp"
     ],
     "langagelogo": [
       "images/logo_langages/js.png",
@@ -105,7 +121,12 @@
     "description": "Débbugage et optimisation d'un site de photographe (debbuage de fonctionnalités + optimisation du site + SEO ...)",
     "modalText": "Débogage et optimisation d'un site web pour un photographe, optimisation des images, réglage du carrousel d'images, débogage de la barre de filtrage, ajustement du contraste, utilisation des outils de développement de Google (Lighthouse, etc.), utilisation de WAVE, mise en place du référencement local (via Schema.org), optimisation du code.", 
     "imageModal": [
-
+      "images/images_website/nina_website_1.webp",
+      "images/images_website/nina_website_2.webp",
+      "images/images_website/wave.webp",
+      "images/images_website/lighthouse.webp",
+      "images/images_website/ref.webp",
+      "images/images_website/fonction-js.webp"
     ],
     "langagelogo": [
       "images/logo_langages/js.png",
