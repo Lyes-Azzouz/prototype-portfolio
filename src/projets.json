@@ -2,16 +2,16 @@
   {
     "id": 1,
     "title": "Intégration d'une maquette en HTML & CSS",
-    "image": "images/logo_projets/Booki.png",
+    "image": "images/logo_projets/Booki.webp",
     "description": "Intégration complète d'un site d'agence de location.",
     "modalText": "Intégration d'un site de location immobilière avec Html et css seulement.",
     "imageModal": [
       "images/images_website/booki_1.webp",
       "images/images_website/booki_2.webp",
       "images/images_website/booki_tablet_1.webp",
-      "images/images_website/booki_tablet_2.webp",
+      "images/images_website/booki-tablet-2.webp",
       "images/images_website/booki_mobile_1.webp",
-      "images/images_website/booki_mobile_2.webp",
+      "images/images_website/booki-mobile-2.webp",
       "images/images_website/booki_mobile_3.webp"
     ],
     "langagelogo": [
@@ -25,17 +25,17 @@
   {
     "id": 2,
     "title": "Création d'une application web avec React & Sass",
-    "image": "images/logo_projets/kasa.png",
+    "image": "images/logo_projets/kasa.webp",
     "description": "Création from scratch d'une application de location immobilière.",
     "modalText": "Création d'une application de location immobilère avec react , utilisations de states et hooks , créations de composants réutilisables , utilisation de sass pour optimiser et simplifier la mise en place du style.",
     "imageModal": [
-      "images/images_website/kasa_1.webp",
-      "images/images_website/kasa_2.webp",
-      "images/images_website/kasa_3.webp",
-      "images/images_website/kasa_4.webp",
-      "images/images_website/kasa_mobile_1.webp",
-      "images/images_website/kasa_mobile_2.webp",
-      "images/images_website/kasa_mobile_3.webp",
+      "images/images_website/kasa-1.webp",
+      "images/images_website/kasa-2.webp",
+      "images/images_website/kasa-3.webp",
+      "images/images_website/kasa-4.webp",
+      "images/images_website/kasa-mobile-1.webp",
+      "images/images_website/kasa-mobile-2.webp",
+      "images/images_website/kasa-mobile-3.webp",
       "images/images_website/kasa_mobile_4.webp",
       "images/images_website/kasa_mobile_5.webp"
     ],
@@ -48,7 +48,7 @@
   {
     "id": 3,
     "title": "Plannification du projet d'un client",
-    "image": "images/logo_projets/menu-maker.png",
+    "image": "images/logo_projets/menu-maker.webp",
     "description": "Plannification complète du projet d'un client. ",
     "modalText": "Plannification complète du projet d'un client , avec trello pour la gestion de projets , réalisation d'un tableau kanban pour répertorier les tâches à accomplir , utilisation de slack pour la communication , mise en place de planning pour les réunions et de deads lines pour les étapes du projets.",
     "imageModal": [
@@ -63,7 +63,7 @@
   {
     "id": 4,
     "title": "Développement d'un back end avec Node.js, Express.js, MongoDB",
-    "image": "images/logo_projets/mon_vieux_grimoire.png",
+    "image": "images/logo_projets/mon_vieux_grimoire.webp",
     "description": "Création d'un back-end (Server & API RESTful) et mise en place d'une base de données.",
     "modalText": "Création d'un back-end complet et fonctionnel , gestion de l'authentication et sécurisation des données(sécurisation des tokens , cryptage des données sensible comme les mots de passes etc.) , mise en place de logique métier(traitement de données , gestion des erreurs etc.) , mise en place de models de données , création et installation d'une API , utilisation de postman pour les test , mise en place et utilisation de mongoDB pour la base de données , utilisation de node.js et le frameworks express.js pour mettre en place le serveur et toutes les fontionnalités requises au bon fonctionnement du back-end.",
     "imageModal": [
@@ -78,7 +78,7 @@
   {
     "id": 5,
     "title": "Création d'une page web dynamique avec Javascript",
-    "image": "images/logo_projets/sophie-bluel.png",
+    "image": "images/logo_projets/sophie-bluel.webp",
     "description": "Création d'une page web dynamique pour une architecte d'intérieur, développement de fonctionnalités côté front-end.",
     "modalText": "Création d'une page web dynamique en rendant une page web html css classique et statique en une réelle page interactive grace à javascript , manipulation du dom , création d'une fenêtre modal , mise en place de fonctionnalité coté front comme l'implémentaiton du CRUD , création d'une page login , mise en place d'un systeme de gestion de projets (contexte du site) , connection au back end préexistant , utilisation de fetch pour les appel API , fonctions asynchrones pour les promise (await , async) etc.",
     "imageModal": [
@@ -86,7 +86,7 @@
       "images/images_website/sb_2.webp",
       "images/images_website/sb_3.webp",
       "images/images_website/sb_4.webp",
-      "images/images_website/sb_5.webp"
+      "images/images_website/sb-5.webp"
     ],
     "langagelogo": [
   "images/logo_langages/html-5.png",
@@ -98,7 +98,7 @@
   {
     "id": 6,
     "title": "Debbugage et optimisation d'un site web",
-    "image": "images/logo_projets/nina-carducci.png",
+    "image": "images/logo_projets/nina-carducci.webp",
     "description": "Débbugage et optimisation d'un site de photographe (debbuage de fonctionnalités + optimisation du site + SEO ...)",
     "modalText": "Débogage et optimisation d'un site web pour un photographe, optimisation des images, réglage du carrousel d'images, débogage de la barre de filtrage, ajustement du contraste, utilisation des outils de développement de Google (Lighthouse, etc.), utilisation de WAVE, mise en place du référencement local (via Schema.org), optimisation du code.", 
     "imageModal": [
