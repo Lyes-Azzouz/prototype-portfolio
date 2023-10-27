@@ -40,6 +40,7 @@
       "images/images_website/kasa_mobile_5.webp"
     ],
     "langagelogo": [
+      "images/logo_langages/js.png",
       "images/logo_langages/react.png",
       "images/logo_langages/sass.png"
     ],
@@ -70,6 +71,7 @@
 
     ],
     "langagelogo": [
+      "images/logo_langages/js.png",
        "images/logo_langages/node.png",
        "images/logo_langages/mongodb.png"
     ],
@@ -105,6 +107,7 @@
 
     ],
     "langagelogo": [
+      "images/logo_langages/js.png",
  "images/logo_langages/dev_tools.png"
     ],
     "lienprojet": "https://github.com/Lyes-Azzouz/Site-Photographe-Nina-Carducci-debbuged.git"
