@@ -1,5 +1,6 @@
 import React from "react";
 import "../styles/components/navbar.scss";
+import logo from "./logo/navbar_logo.png";
 import Bmenu from "./Bmenu";
 
 class Navbar extends React.Component {
@@ -16,16 +17,7 @@ class Navbar extends React.Component {
         <Bmenu />
         <div className="elements">
           <div className="me">
-            <div className="name">
-              {" "}
-              <span className="l">L</span>
-              <span className="a">A</span>
-            </div>
-
-            <div className="poste">
-              <span className="w">W</span>
-              <span className="d">D</span>
-            </div>
+            <img src={logo} alt="logo_lyes_azzouz" />
           </div>
           <div className="square"></div>
           <ul>

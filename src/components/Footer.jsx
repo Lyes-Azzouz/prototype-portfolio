@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/components/footer.scss";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import logo from "./logo/footer_logo.png";
 
 const Footer = () => {
   return (
@@ -24,15 +25,7 @@ const Footer = () => {
           <span>Lyes Azzouz</span>
         </div>
         <div className="me">
-          <div className="name">
-            <span className="l">L</span>
-            <span className="a">A</span>
-          </div>
-
-          <div className="poste">
-            <span className="w">W</span>
-            <span className="d">D</span>
-          </div>
+          <img src={logo} alt="logo_footer" />
         </div>
       </div>
       <div id="links"></div>

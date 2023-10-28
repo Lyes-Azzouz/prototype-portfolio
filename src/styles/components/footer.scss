@@ -87,26 +87,9 @@ footer {
       background-color: #7f5af010;
       padding: 4px 10px;
       border-radius: 15px;
-      .name {
-        font-weight: 400;
-        .l {
-          font-size: 1.4em;
-        }
-        .a {
-          color: #2cb67d;
-          position: relative;
-          top: 3px;
-          right: 2px;
-          font-size: 1.2em;
-        }
-      }
-      .poste {
-        font-size: 0.7em;
-        position: relative;
-        bottom: 4.5px;
-        .w {
-          color: #2cb67d;
-        }
+      img {
+        height: 70px;
+        border-radius: 50px;
       }
     }
   }

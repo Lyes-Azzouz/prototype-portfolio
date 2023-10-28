@@ -40,30 +40,8 @@
       animation: line-animate 5s ease-in-out forwards;
       font-weight: 600;
       z-index: 2;
-
-      .name {
-        font-size: 1.6em;
-
-        .l {
-          position: relative;
-          bottom: 10px;
-          left: 4px;
-        }
-
-        .a {
-          color: #2cb67d;
-        }
-      }
-
-      .poste {
-        font-size: 0.5em;
-        position: relative;
-        left: 3px;
-        bottom: 10px;
-
-        .w {
-          color: #2cb67d;
-        }
+      img {
+        height: 90px;
       }
     }
   }
@@ -249,11 +227,11 @@
 
     .elements {
       .me {
-        left: 30px;
-        top: 12px;
+        left: 40px;
+        top: 8px;
 
-        .name {
-          font-size: 0.8em;
+        img {
+          height: 50px;
         }
       }
       ul {
